@@ -9,13 +9,14 @@
 
 ### General Site
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
-- [ ] Verticle social icons on the right side that will be visible on every page
+- [ ] Vertical social icons on the right side that will be visible on every page
 
 
 ### General Styling
 - [ ] Great Vibes font imported
 - [ ] Once Raz decides on a design, incorporate that color pallet into the tailwind.config file
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
+- [ ] Set up a themes components
 
 ### Navbar
 
@@ -33,6 +34,6 @@
 ### Contact
 
 ### Footer
-- [ ] miniture hours table
+- [ ] miniature hours table
 - [ ] horizontal social icons
 - [ ] legal stuff in small font (copyright/licenses)
