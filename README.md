@@ -16,7 +16,8 @@
 - [ ] Great Vibes font imported
 - [ ] Once Raz decides on a design, incorporate that color pallet into the tailwind.config file
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
-- [ ] Set up a themes components
+- [ ] Set up a themes component
+- [ ] Set up Text component to handle text variants
 
 ### Navbar
 
@@ -26,7 +27,7 @@
 - [ ] menu card template built once we finalize a design
 
 ### About
-- [ ] lorem ipsum paragraph
+- [x] lorem ipsum paragraph
 - [ ] placeholder image of Raz
 
 ### Hours

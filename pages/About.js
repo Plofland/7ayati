@@ -10,7 +10,7 @@ export default function About() {
                 <h2>
                     About Me
                 </h2>
-                <Text v={body}>
+                <Text variant={variant.body}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac pulvinar vitae ipsum, lectus nisi. Consectetur dui interdum congue vitae ultrices. Lobortis vel id facilisi netus. Potenti habitasse id tellus est  , aenean. Laoreet ac etiam pharetra faucibus integer purus duis elit at. Convallis semper quis aliquam dis leo pellentesque aliquet orci arcu. Maecenas lobortis proin commodo quis magna arcu senectus non tincidunt. A nisl netus pellentesque a consequat lacus et. Purus felis semper consequat lectus orci, sed. Quis elit ac sagittis ipsum purus mauris duis tincidunt in. At luctus volutpat nisl, dignissim egestas.
                 </Text>
             </AboutText>
@@ -19,3 +19,8 @@ export default function About() {
         </>
     )
 }
+
+
+const AboutText = styled.div`
+
+`

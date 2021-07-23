@@ -1,9 +1,9 @@
 
-export function createStyleSheet(styles) {
+function createStyleSheet(styles) {
     return styles
 }
 
-export const variants = createStyleSheet({
+export const variant = createStyleSheet({
     headline1: {
         fontWeight: "bold",
         fontSize: "44px",
