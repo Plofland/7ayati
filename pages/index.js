@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
-import Navbar from '../components/Navbar';
 import { colors } from '../themes';
 
 export default function Home() {
@@ -15,12 +14,9 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
 			<main>
 				<h1>7ayati</h1>
 			</main>
-
-			<footer></footer>
 		</HomeDiv>
 	);
 }

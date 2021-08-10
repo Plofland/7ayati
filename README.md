@@ -3,32 +3,35 @@
 ## Café and Hookah Lounge
 
 #### (7ayati is pronounced like 'hah yah ti')
-7ayati is an up and coming
+7ayati is an up and coming cafe and hookah lounge
 
 <br>
 
 ### General Site
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
-- [ ] Vertical social icons on the right side that will be visible on every page
+- [ ] [Change the pages architecture in _app.js](https://newcurrent.se/blog/nextjs-styled-components) 
 
 
 ### General Styling
 - [ ] Great Vibes font imported
-- [ ] Once Raz decides on a design, incorporate that color pallet into the tailwind.config file
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
-- [ ] Set up a themes component
+- [x] Set up a themes component
 - [ ] Set up Text component to handle text variants
 
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
+-   [ ] Great Vibes font for nav links
+
+### Socialbar
+- [ ] Vertical social icons on the right side that will be visible on every page
 
 ### Menu
-- [ ] menu card template built once we finalize a design
+- [ ] menu card template component built
 
 ### About
 - [x] lorem ipsum paragraph
-- [ ] placeholder image of Raz
+- [x] placeholder image of Raz
 
 ### Hours
 

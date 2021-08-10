@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next';
-// import Text from '../components/Text'
 import RazPortrait from '../public/RazPortrait.JPG';
-import Navbar from '../components/Navbar';
 import { colors } from '../themes';
+import Navbar from '../components/Navbar';
 
 export default function About() {
 	return (
 		<AboutDiv>
-			<Navbar />
+            <Navbar />
 			<AboutSection>
 				<AboutCard>
 					<AboutText>
