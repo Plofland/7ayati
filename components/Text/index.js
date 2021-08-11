@@ -6,17 +6,17 @@
 // export const variant = createStyleSheet({
 //     headline1: {
 //         fontWeight: "bold",
-//         fontSize: "44px",
+//         fontSize: "96px",
 //         lineHeight: "1.2",
 //     },
 //     headline2: {
 //         fontWeight: "bold",
-//         fontSize: "36px",
+//         fontSize: "64px",
 //         lineHeight: "1.4",
 //     },
 //     headline3: {
 //         fontWeight: "bold",
-//         fontSize: "28px",
+//         fontSize: "36px",
 //         lineHeight: "1.4",
 //     },
 //     headline4: {

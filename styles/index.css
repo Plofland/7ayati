@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --grayChateau: #9EA9B3;
+	--darkLavender: #0A1926;
+	--darkText: #3A3A3A;
+    --lightText: #F9F9F9;
+    --cyanBlue: #173755;
+}
+
+html {
+    background-color: var(--darkLavender);
+    color: var(--lightText);
+}

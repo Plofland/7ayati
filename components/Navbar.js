@@ -9,7 +9,7 @@ import { colors } from '../themes';
 export default function Navbar() {
 	return (
 		<>
-			<Head>
+			{/* <Head>
 				<link
 					rel="preconnect"
 					href="https://fonts.googleapis.com"
@@ -23,30 +23,19 @@ export default function Navbar() {
 					href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
 					rel="stylesheet"
 				/>
-			</Head>
-			<StyledContainer>
-				<StyledLogoBG />
-			</StyledContainer>
+			</Head> */}
+			<StyledLogoBG />
 			<StyledNav>
-				<StyledNavLink>
-					<Link
-						href="/menu"
-						className=""
-						passHref
-					>
-						<A>Menu</A>
-					</Link>
-				</StyledNavLink>
-				<StyledNavLink>
-					<Link
-						href="/about"
-						className=""
-						passHref
-					>
-						<A>About</A>
-					</Link>
-				</StyledNavLink>
-
+				<Link href="/menu" className="" passHref>
+					<StyledNavLink>
+						<p>Menu</p>
+					</StyledNavLink>
+				</Link>
+				<Link href="/about" className="" passHref>
+					<StyledNavLink>
+						<p>About</p>
+					</StyledNavLink>
+				</Link>
 				<StyledLogo>
 					<Link href="/" className="">
 						<a>
@@ -57,28 +46,23 @@ export default function Navbar() {
 						</a>
 					</Link>
 				</StyledLogo>
-				<StyledNavLink>
-					<Link href="/hours" className="">
-						<A>Hours</A>
-					</Link>
-				</StyledNavLink>
-				<StyledNavLink>
-					<Link href="/contact" className="">
-						<A>Contact</A>
-					</Link>
-				</StyledNavLink>
+				<Link href="/hours" className="" passHref>
+					<StyledNavLink>
+						<p>Hours</p>
+					</StyledNavLink>
+				</Link>
+				<Link href="/contact" className="" passHref>
+					<StyledNavLink>
+						<p>Contact</p>
+					</StyledNavLink>
+				</Link>
 			</StyledNav>
 		</>
 	);
 }
 
-const StyledContainer = styled.div`
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	left: -1.5%;
+const StyledLogo = styled.div`
+	margin-bottom: -6%;
 `;
 
 const StyledLogoBG = styled.div`
@@ -86,7 +70,9 @@ const StyledLogoBG = styled.div`
 	border-radius: 50%;
 	width: 25%;
 	height: 26%;
-	position: relative;
+	position: absolute;
+	z-index: -1;
+	margin: 0 36%;
 `;
 
 const StyledNav = styled.nav`
@@ -97,20 +83,10 @@ const StyledNav = styled.nav`
 `;
 
 const StyledNavLink = styled.div`
-	border: 1px solid orange;
 	font-family: 'Great Vibes', cursive;
-	cursor: pointer;
+	color: ${colors.darkText};
 	padding: 2rem;
-`;
-
-const A = styled.a`
 	font-weight: bold;
 	font-size: 2rem;
-	&:hover {
-		color: red;
-	}
-`;
-
-const StyledLogo = styled.div`
-	margin-bottom: -6%;
+	cursor: pointer;
 `;

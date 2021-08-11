@@ -17,12 +17,13 @@
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
 - [x] Set up a themes component
 - [ ] Set up Text component to handle text variants
+- [x] Set background on an app level
 
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
 -   [x] Great Vibes font for nav links
--   [ ] Link containing divs are the height of the navbar and clickable
+-   [x] Link containing divs are the height of the navbar and clickable
 
 ### Socialbar
 - [ ] Vertical social icons on the right side that will be visible on every page
