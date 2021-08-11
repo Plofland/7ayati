@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Navbar from '../components/Navbar';
+import styled from 'styled-components';
+import { colors } from '../themes';
 
 export default function Home() {
 	return (
-		<div>
+		<HomeDiv>
 			<Head>
 				<title>7ayati</title>
 				<meta
@@ -13,12 +14,14 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Navbar />
 			<main>
 				<h1>7ayati</h1>
 			</main>
-
-			<footer></footer>
-		</div>
+		</HomeDiv>
 	);
 }
+
+const HomeDiv = styled.div`
+	background-color: ${colors.darkLavender};
+	height: 100vh;
+`;
