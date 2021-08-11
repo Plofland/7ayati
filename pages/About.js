@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 export default function About() {
 	return (
 		<AboutDiv>
-            <Navbar />
+            {/* <Navbar /> */}
 			<AboutSection>
 				<AboutCard>
 					<AboutText>

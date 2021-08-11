@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/Fayati logo no bg 200px.png';
@@ -8,28 +9,43 @@ import { colors } from '../themes';
 export default function Navbar() {
 	return (
 		<>
+			<Head>
+				<link
+					rel="preconnect"
+					href="https://fonts.googleapis.com"
+				/>
+				<link
+					rel="preconnect"
+					href="https://fonts.gstatic.com"
+					crossorigin
+				/>
+				<link
+					href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+					rel="stylesheet"
+				/>
+			</Head>
 			<StyledContainer>
 				<StyledLogoBG />
 			</StyledContainer>
 			<StyledNav>
-				<StyledDiv>
+				<StyledNavLink>
 					<Link
 						href="/menu"
 						className=""
 						passHref
 					>
-						<a>Menu</a>
+						<A>Menu</A>
 					</Link>
-				</StyledDiv>
-				<StyledDiv>
+				</StyledNavLink>
+				<StyledNavLink>
 					<Link
 						href="/about"
 						className=""
 						passHref
 					>
-						<a>About</a>
+						<A>About</A>
 					</Link>
-				</StyledDiv>
+				</StyledNavLink>
 
 				<StyledLogo>
 					<Link href="/" className="">
@@ -41,16 +57,16 @@ export default function Navbar() {
 						</a>
 					</Link>
 				</StyledLogo>
-				<StyledDiv>
+				<StyledNavLink>
 					<Link href="/hours" className="">
-						<a>Hours</a>
+						<A>Hours</A>
 					</Link>
-				</StyledDiv>
-				<StyledDiv>
+				</StyledNavLink>
+				<StyledNavLink>
 					<Link href="/contact" className="">
-						<a>Contact</a>
+						<A>Contact</A>
 					</Link>
-				</StyledDiv>
+				</StyledNavLink>
 			</StyledNav>
 		</>
 	);
@@ -62,16 +78,14 @@ const StyledContainer = styled.div`
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	z-index: -1;
+	left: -1.5%;
 `;
 
 const StyledLogoBG = styled.div`
 	background-color: ${colors.grayChateau};
-	background-color: black;
 	border-radius: 50%;
-	border: 1px solid black;
-	width: 30%;
-	height: 30%;
+	width: 25%;
+	height: 26%;
 	position: relative;
 `;
 
@@ -80,15 +94,23 @@ const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
 	align-items: start;
-	border: 1px solid white;
 `;
 
-const StyledDiv = styled.div`
+const StyledNavLink = styled.div`
 	border: 1px solid orange;
-	margin-top: 5vh;
+	font-family: 'Great Vibes', cursive;
+	cursor: pointer;
+	padding: 2rem;
+`;
+
+const A = styled.a`
+	font-weight: bold;
+	font-size: 2rem;
+	&:hover {
+		color: red;
+	}
 `;
 
 const StyledLogo = styled.div`
-	border: 1px solid red;
 	margin-bottom: -6%;
 `;
