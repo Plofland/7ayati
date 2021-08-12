@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<StyledDiv>
 			<StyledHours>
-				<p>Hours will go here</p>
+				<TableTitle>Hours</TableTitle>
 				<HoursTable>
 					<DayDiv>
 						Sun <DayHours>10-2pm</DayHours>
@@ -24,20 +24,24 @@ export default function Footer() {
 						Thur <DayHours>4-11pm</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Fri{' '}
-						<DayHours>10am-2pm 4pm-12</DayHours>
+						Fri
+						<DayHours>
+							<p>10am-2pm</p>
+							<p>4pm-12</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Sat{' '}
-						<DayHours>10am-2pm 4pm-12</DayHours>
+						Sat
+						<DayHours>
+							<p>10am-2pm</p>
+							<p>4pm-12</p>
+						</DayHours>
 					</DayDiv>
 				</HoursTable>
 			</StyledHours>
 			<StyledLegal>
-				<p>
-					Legal Stuff will go here 7ayati Café &
-					Hookah Lounge LLC ©7ayati
-				</p>
+				Legal Stuff will go here 7ayati Café &
+				Hookah Lounge LLC ©7ayati
 			</StyledLegal>
 		</StyledDiv>
 	);
@@ -49,23 +53,35 @@ const StyledDiv = styled.div`
 	flex-direction: column;
 `;
 
+const TableTitle = styled.p`
+	font-weight: bold;
+	font-size: 1.5rem;
+    margin-bottom: .5%;
+`;
+
 const StyledHours = styled.div`
-	border: 1px solid black;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1% 0;
 `;
 
 const HoursTable = styled.div`
-	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
 `;
 
 const DayDiv = styled.div`
-	border: 1px solid black;
-`;
-const DayHours = styled.div`
-	border: 1px solid black;
+	margin: 0 1rem;
 `;
 
-const StyledLegal = styled.div`
-	border: 1px solid black;
+const DayHours = styled.p`
+	flex-direction: column;
+`;
+
+const StyledLegal = styled.p`
 	text-align: center;
+	font-size: 12px;
+    padding: .5% 0;
 `;
