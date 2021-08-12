@@ -6,21 +6,72 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Socialbar(props) {
 	const { vertical } = props;
 
+    //todo get rid of my email when I get the 7ayati company email
 	return vertical ? (
 		<SocialContainerVert>
-			<SocialIcon icon={['far', 'envelope']} />
-			<SocialIcon icon={['fab', 'instagram']} />
-			<SocialIcon icon={['fab', 'twitter']} />
-			<SocialIcon icon={['fab', 'facebook']} />
-			<SocialIcon icon={['fab', 'pinterest']} />
+			<a
+				href="mailto: ploflan@gmail.com"
+				target="_blank"
+			>
+				<SocialIcon icon={['far', 'envelope']} />
+			</a>
+			<a
+				href={'https://instagram.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'instagram']} />
+			</a>
+			<a
+				href={'https://twitter.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'twitter']} />
+			</a>
+			<a
+				href={'https://facebook.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'facebook']} />
+			</a>
+			<a
+				href={'https://pinterest.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'pinterest']} />
+			</a>
 		</SocialContainerVert>
 	) : (
 		<SocialContainerHor>
-			<SocialIcon icon={['far', 'envelope']} />
-			<SocialIcon icon={['fab', 'instagram']} />
-			<SocialIcon icon={['fab', 'twitter']} />
-			<SocialIcon icon={['fab', 'facebook']} />
-			<SocialIcon icon={['fab', 'pinterest']} />
+			<a
+				href="mailto: ploflan@gmail.com"
+				target="_blank"
+			>
+				<SocialIcon icon={['far', 'envelope']} />
+			</a>
+			<a
+				href={'https://instagram.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'instagram']} />
+			</a>
+			<a
+				href={'https://twitter.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'twitter']} />
+			</a>
+			<a
+				href={'https://facebook.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'facebook']} />
+			</a>
+			<a
+				href={'https://pinterest.com/'}
+				target="_blank"
+			>
+				<SocialIcon icon={['fab', 'pinterest']} />
+			</a>
 		</SocialContainerHor>
 	);
 }
