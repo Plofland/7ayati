@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../themes';
+import Socialbar from './Socialbar';
 
 export default function Footer() {
 	return (
@@ -39,6 +40,7 @@ export default function Footer() {
 					</DayDiv>
 				</HoursTable>
 			</StyledHours>
+			<Socialbar vertical={false} />
 			<StyledLegal>
 				Legal Stuff will go here 7ayati Café &
 				Hookah Lounge LLC ©7ayati
@@ -51,12 +53,13 @@ const StyledDiv = styled.div`
 	background-color: ${colors.grayChateau};
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 `;
 
 const TableTitle = styled.p`
 	font-weight: bold;
 	font-size: 1.5rem;
-    margin-bottom: .5%;
+	margin-bottom: 0.5%;
 `;
 
 const StyledHours = styled.div`
@@ -83,5 +86,5 @@ const DayHours = styled.p`
 const StyledLegal = styled.p`
 	text-align: center;
 	font-size: 12px;
-    padding: .5% 0;
+	padding: 0.5% 0;
 `;
