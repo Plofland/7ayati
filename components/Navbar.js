@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/Fayati logo no bg 200px.png';
@@ -9,21 +8,6 @@ import { colors } from '../themes';
 export default function Navbar() {
 	return (
 		<>
-			{/* <Head>
-				<link
-					rel="preconnect"
-					href="https://fonts.googleapis.com"
-				/>
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossorigin
-				/>
-				<link
-					href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-					rel="stylesheet"
-				/>
-			</Head> */}
 			<StyledLogoBG />
 			<StyledNav>
 				<Link href="/menu" className="" passHref>

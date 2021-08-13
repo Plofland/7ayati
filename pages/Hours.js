@@ -1,9 +1,117 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
+import { colors } from '../themes';
+import coals from '../assets/latbok-n4au.jpeg';
 
 export default function Hours() {
-    return (
-        <div>
-            
-        </div>
-    )
+	return (
+		<HoursSection>
+			<HoursText>
+				<StyledTitle>Hours</StyledTitle>
+				<Schedule>
+					<DayRow>
+						<p>Sunday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>10am - 2pm</p>
+					</DayRow>
+					<DayRow>
+						<p>Monday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>Closed</p>
+					</DayRow>
+					<DayRow>
+						<p>Tuesday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>4pm - 11pm</p>
+					</DayRow>
+					<DayRow>
+						<p>Wednesday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>4pm - 11pm</p>
+					</DayRow>
+					<DayRow>
+						<p>Thursday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>4pm - 11pm</p>
+					</DayRow>
+					<DayRow>
+						<p>Friday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>
+							10am - 2pm & 4pm - 11pm
+						</p>
+					</DayRow>
+					<DayRow>
+						<p>Saturday</p>
+						<ExpandingEllipse>
+							......................................................................................................
+						</ExpandingEllipse>
+						<p>
+							10am - 2pm & 4pm - 11pm
+						</p>
+					</DayRow>
+				</Schedule>
+			</HoursText>
+			<img
+				src={coals.src}
+				alt="red hot glowing coal cubes"
+			/>
+		</HoursSection>
+	);
 }
+
+const HoursSection = styled.div`
+	width: 70%;
+	margin: 15% auto;
+	background-color: ${colors.cyanBlue};
+	display: flex;
+    position: relative;
+
+	img {
+		position: absolute;
+		right: 2rem;
+        top: -2rem;
+		max-width: 100%;
+		max-height: 120%;
+	}
+`;
+
+const HoursText = styled.div`
+	width: 50%;
+	margin: 2rem;
+`;
+
+const StyledTitle = styled.div`
+	font-family: 'Great Vibes', cursive;
+	font-size: 3rem;
+	font-weight: bold;
+`;
+
+const Schedule = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+const DayRow = styled.div`
+    display: flex;
+	flex-direction: row;
+`;
+
+const ExpandingEllipse = styled.div`
+	width: 1rem;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipses;
+`;

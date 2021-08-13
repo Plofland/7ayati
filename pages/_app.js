@@ -1,12 +1,18 @@
 import '../styles/index.css';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 import Head from 'next/head';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import Socialbar from '../components/Socialbar';
+
+library.add(fab, faEnvelope);
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<>
-      <Head>
+			<Head>
 				<link
 					rel="preconnect"
 					href="https://fonts.googleapis.com"
@@ -21,9 +27,10 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
-      <Navbar />
+			<Navbar />
+			<Socialbar vertical={true} />
 			<Component {...pageProps} />
-      <Footer />
+			<Footer />
 		</>
 	);
 }
