@@ -10,57 +10,57 @@ export default function Hours() {
 				<StyledTitle>Hours</StyledTitle>
 				<Schedule>
 					<DayRow>
-						<Day>Sunday</Day>
+						<p>Sunday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>10am - 2pm</OpenHours>
+						<p>10am - 2pm</p>
 					</DayRow>
 					<DayRow>
-						<Day>Monday</Day>
+						<p>Monday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>Closed</OpenHours>
+						<p>Closed</p>
 					</DayRow>
 					<DayRow>
-						<Day>Tuesday</Day>
+						<p>Tuesday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>4pm - 11pm</OpenHours>
+						<p>4pm - 11pm</p>
 					</DayRow>
 					<DayRow>
-						<Day>Wednesday</Day>
+						<p>Wednesday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>4pm - 11pm</OpenHours>
+						<p>4pm - 11pm</p>
 					</DayRow>
 					<DayRow>
-						<Day>Thursday</Day>
+						<p>Thursday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>4pm - 11pm</OpenHours>
+						<p>4pm - 11pm</p>
 					</DayRow>
 					<DayRow>
-						<Day>Friday</Day>
+						<p>Friday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>
+						<p>
 							10am - 2pm & 4pm - 11pm
-						</OpenHours>
+						</p>
 					</DayRow>
 					<DayRow>
-						<Day>Saturday</Day>
+						<p>Saturday</p>
 						<ExpandingEllipse>
-							...
+							......................................................................................................
 						</ExpandingEllipse>
-						<OpenHours>
+						<p>
 							10am - 2pm & 4pm - 11pm
-						</OpenHours>
+						</p>
 					</DayRow>
 				</Schedule>
 			</HoursText>
@@ -77,52 +77,41 @@ const HoursSection = styled.div`
 	margin: 15% auto;
 	background-color: ${colors.cyanBlue};
 	display: flex;
+    position: relative;
 
 	img {
 		position: absolute;
-		right: 4rem;
+		right: 2rem;
+        top: -2rem;
 		max-width: 100%;
 		max-height: 120%;
 	}
 `;
 
 const HoursText = styled.div`
-	text-align: center;
 	width: 50%;
 	margin: 2rem;
-	border: 1px solid white;
 `;
 
 const StyledTitle = styled.div`
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
-	margin-left: 0;
-	text-align: left;
 `;
 
 const Schedule = styled.div`
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 `;
 
 const DayRow = styled.div`
-	width: 100%;
     display: flex;
 	flex-direction: row;
-    justify-content: space-between;
-`;
-
-const Day = styled.p`
-	border: 1px solid orange;
-`;
-
-const OpenHours = styled.p`
-	border: 1px solid black;
 `;
 
 const ExpandingEllipse = styled.div`
-	width: 2rem;
-	border: 1px solid green;
+	width: 1rem;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipses;
 `;
