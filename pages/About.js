@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Image from 'next';
+// import Image from 'next/image';
 import RazPortrait from '../public/RazPortrait.JPG';
 import { colors } from '../themes';
 
