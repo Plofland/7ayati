@@ -1,21 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
-import { drinks, food, hookah } from '../assets/MenuItems';
 import { colors } from '../themes/index';
 import logo from '../public/Fayati logo light lilac bg200.jpg';
 
-export default function MenuCard() {
+export default function MenuCard(props) {
+    const {info} = props
+    console.log(info)
 	return (
 		<StyledContainer>
 			<StyledMenuCard>
 				<StyledMenuText>
 					<StyledTitle>
-						{drinks.coldBrew.name}
+						{info.name}
 					</StyledTitle>
 					<StyledText>
-						<p>{drinks.coldBrew.price}</p>
+						<p>{info.price}</p>
 						<StyledDescription>
-							{drinks.coldBrew.description}
+							{info.description}
 						</StyledDescription>
 					</StyledText>
 				</StyledMenuText>
@@ -72,7 +73,7 @@ const StyledText = styled.div`
 
 const StyledDescription = styled.div`
 	// border: 2px solid limegreen;
-	padding: 1rem 0.5rem;
+	padding: 1rem;
 	flex-grow: 1;
 	overflow: hidden;
 `;
