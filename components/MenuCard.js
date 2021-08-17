@@ -29,11 +29,11 @@ export default function MenuCard(props) {
 }
 
 const SingleItem = styled.div`
-	border: 2px solid white;
+	// border: 2px solid white;
 `;
 
 const CardContainer = styled.div`
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 	text-align: center;
 	margin: 4rem;
 	width: 300px;
@@ -43,7 +43,7 @@ const CardContainer = styled.div`
 `;
 
 const Card = styled.div`
-	border: 2px solid white;
+	// border: 2px solid white;
 	display: flex;
 	flex-direction: column;
 	width: 200px;
@@ -63,6 +63,7 @@ const Title = styled.p`
 	// border: 1px solid white;
 	font-size: 1.2rem;
     display: flex;
+    padding: 1rem;
 	height: 30%;
     align-items: center;
     justify-content: center

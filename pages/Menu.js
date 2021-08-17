@@ -49,36 +49,28 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-top: 4rem;
+	margin-top: 7rem;
 `;
 
 const MenuSection = styled.div`
-	border: 2px solid orange;
+	// border: 2px solid orange;
 	margin-top: 4rem;
 	text-align: center;
 `;
 
 const SectionTitle = styled.p`
-	border: 2px solid red;
+	// border: 2px solid red;
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
+    margin-top: 2rem;
 `;
 
 const MenuItems = styled.div`
-	border: 2px solid black;
+	// border: 2px solid black;
 	display: flex;
 	flex-direction: row;
-	margin: 4rem;
+	margin: 0 4rem;
 	flex-wrap: wrap;
 	justify-content: center;
 `;
-
-// declaring a CSS variable
-//     :root {
-//     --text-color: hsl(145, 63%, 49%);
-//     }
-
-//     p {
-//     color: var(--text-color);
-//     }

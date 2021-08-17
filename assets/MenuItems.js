@@ -45,7 +45,7 @@ export const menuData = {
 				'These large muffins are jam-packed with blueberries with a sugary-cinnamon crumb topping.'
 		},
 		{
-			name: 'Strawberry topped cheesecake',
+			name: 'Strawberry cheesecake',
 			index: 'f3',
 			price: '$9',
 			description:
