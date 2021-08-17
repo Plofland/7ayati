@@ -7,53 +7,72 @@ export default function Menu() {
 	return (
 		<StyledMenu>
 			<MenuSection>
-				{menuData &&
-					menuData.drinks.map((foodItem) => (
-						<MenuCard
-							key={foodItem.index}
-							info={foodItem}
-						/>
-					))}
+				<SectionTitle>Drinks</SectionTitle>
+				<MenuItems>
+					{menuData &&
+						menuData.drinks.map((foodItem) => (
+							<MenuCard
+								key={foodItem.index}
+								info={foodItem}
+							/>
+						))}
+				</MenuItems>
 			</MenuSection>
 			<MenuSection>
-				{menuData &&
-					menuData.food.map((foodItem) => (
-						<MenuCard
-							key={foodItem.index}
-							info={foodItem}
-						/>
-					))}
+				<SectionTitle>Food</SectionTitle>
+				<MenuItems>
+					{menuData &&
+						menuData.food.map((foodItem) => (
+							<MenuCard
+								key={foodItem.index}
+								info={foodItem}
+							/>
+						))}
+				</MenuItems>
 			</MenuSection>
 			<MenuSection>
-				{menuData &&
-					menuData.hookah.map((foodItem) => (
-						<MenuCard
-							key={foodItem.index}
-							info={foodItem}
-						/>
-					))}
+				<SectionTitle>Shisha</SectionTitle>
+				<MenuItems>
+					{menuData &&
+						menuData.hookah.map((foodItem) => (
+							<MenuCard
+								key={foodItem.index}
+								info={foodItem}
+							/>
+						))}
+				</MenuItems>
 			</MenuSection>
 		</StyledMenu>
 	);
 }
 
 const StyledMenu = styled.div`
-    display: flex;
+	display: flex;
+	flex-direction: column;
+	margin-top: 4rem;
 `;
 
 const MenuSection = styled.div`
-	margin: 8rem;
-    border: 2px solid black;
+	border: 2px solid orange;
+	margin-top: 4rem;
+	text-align: center;
 `;
 
+const SectionTitle = styled.p`
+	border: 2px solid red;
+	font-family: 'Great Vibes', cursive;
+	font-size: 3rem;
+	font-weight: bold;
+`;
 
-
-// use aspect ratio to make squares for the menu cards
-// .square {
-//     background: #2ecc71;
-//     width: 25rem;
-//     aspect-ratio: 1/1;
-//   }
+const MenuItems = styled.div`
+	border: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	margin: 4rem;
+	flex-wrap: wrap;
+	justify-content: center;
+`;
 
 // declaring a CSS variable
 //     :root {

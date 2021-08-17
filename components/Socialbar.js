@@ -83,6 +83,7 @@ const SocialContainerVert = styled.div`
 	right: 2rem;
 	margin-top: 2rem;
 	color: ${colors.lightText};
+	z-index: 99;
 `;
 const SocialContainerHor = styled.div`
 	display: flex;

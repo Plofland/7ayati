@@ -27,8 +27,10 @@
 - [x] menu card template component built
 - [x] menu divided up into sections Shisha, Hookahs, Coffee, Food
 - [ ] add a little note about buying a hookah
+- [ ] each item's picture sourced from fake DB
 
 ### About
+-[] get rid of absolute img
 
 ### Hours
 - [x] research flex grow for middle box to auto fill space with ellipses

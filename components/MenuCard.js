@@ -4,76 +4,81 @@ import { colors } from '../themes/index';
 import logo from '../public/Fayati logo light lilac bg200.jpg';
 
 export default function MenuCard(props) {
-    const {info} = props
-    console.log(info)
+	const { info } = props;
 	return (
-		<StyledContainer>
-			<StyledMenuCard>
-				<StyledMenuText>
-					<StyledTitle>
-						{info.name}
-					</StyledTitle>
-					<StyledText>
+		<SingleItem>
+			<CardContainer>
+				<Card>
+					<Title>{info.name}</Title>
+					<Text>
 						<p>{info.price}</p>
-						<StyledDescription>
+						<Description>
 							{info.description}
-						</StyledDescription>
-					</StyledText>
-				</StyledMenuText>
-			</StyledMenuCard>
-			<img src={logo.src} alt="Menu item picture" />
-		</StyledContainer>
+						</Description>
+					</Text>
+				</Card>
+				<ImageContainer>
+					<img
+						src={logo.src}
+						alt="Menu item picture"
+					/>
+				</ImageContainer>
+			</CardContainer>
+		</SingleItem>
 	);
 }
 
-const StyledContainer = styled.div`
-	// border: 1px solid yellow;
+const SingleItem = styled.div`
+	border: 2px solid white;
+`;
+
+const CardContainer = styled.div`
+	border: 1px solid yellow;
 	text-align: center;
 	margin: 4rem;
 	width: 300px;
+	display: flex;
 	aspect-ratio: 1/1;
-	position: relative;
 	background-color: ${colors.cyanBlue};
+`;
+
+const Card = styled.div`
+	border: 2px solid white;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+`;
+
+const ImageContainer = styled.div`
+	// border: 2px solid white;
+	margin: auto 0;
 
 	img {
-		position: absolute;
-		right: -100px;
-		top: 50px;
-		max-width: 100%;
-		max-height: 80%;
+		max-width: 150%;
+		max-height: 150%;
 	}
 `;
 
-const StyledMenuCard = styled.div`
-	// border: 2px solid white;
-	display: flex;
-	width: 200px;
-	height: 100%;
-`;
-
-const StyledMenuText = styled.div`
-	// border: 2px solid black;
-	display: flex;
-	flex-direction: column;
-`;
-
-const StyledTitle = styled.p`
-	// border: 2px solid white;
+const Title = styled.p`
+	// border: 1px solid white;
 	font-size: 1.2rem;
-	padding: 1.5rem;
+    display: flex;
+	height: 30%;
+    align-items: center;
+    justify-content: center
 `;
 
-const StyledText = styled.div`
-	// border: 2px solid red;
-	font-size: 0.75rem;
+const Text = styled.div`
+	// border: 1px solid limegreen;
+	font-size: 0.65rem;
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
+	flex-grow: 6;
+    
 `;
 
-const StyledDescription = styled.div`
-	// border: 2px solid limegreen;
+const Description = styled.div`
+	// border: 2px solid red;
 	padding: 1rem;
-	flex-grow: 1;
-	overflow: hidden;
+    flex-grow: inherit;
 `;
