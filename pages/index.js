@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
+import Welcome from '../components/Welcome';
 import { colors } from '../themes';
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<h1>7ayati</h1>
+				<Welcome />
 			</main>
 		</HomeDiv>
 	);
