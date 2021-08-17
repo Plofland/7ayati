@@ -4,7 +4,6 @@ import {popularData} from '../assets/MenuItems'
 import MenuCard from './MenuCard';
 
 export default function PopularItems() {
-    console.log(popularData)
 	return (
 		<MenuSection>
 			<SectionTitle>Popular</SectionTitle>

@@ -39,6 +39,7 @@ const WelcomeSection = styled.div`
     background-image: url('../../assets/coals-for-hookah-on-wooden-background-with-dry-oranges-place-for-text_126267-41.jpeg');
 	width: 40%;
 	margin: 30vh auto;
+    // display: inline-block;
 `;
 
 const Text = styled.div`

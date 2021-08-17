@@ -4,7 +4,6 @@ import MenuCard from '../components/MenuCard';
 import { menuData } from '../assets/MenuItems';
 
 export default function Menu() {
-    console.log(menuData)
 	return (
 		<StyledMenu>
 			<MenuSection>

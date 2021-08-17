@@ -25,5 +25,4 @@ export default function Home() {
 
 const HomeDiv = styled.div`
 	background-color: ${colors.darkLavender};
-	height: 100vh;
 `;
