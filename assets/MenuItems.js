@@ -117,5 +117,7 @@ export const menuData = {
 			description:
 				'A deliciously tangy and sour plain lime flavor. The flavor translates well from the taste, not featuring as much of the strong tobacco notes as others in the Vintage line.'
 		}
-	]
+	],
 };
+
+export const popularData = [menuData.hookah[1], menuData.food[0], menuData.drinks[2]]

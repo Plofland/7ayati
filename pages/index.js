@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styled from 'styled-components';
+import PopularItems from '../components/PopularItems';
 import Welcome from '../components/Welcome';
 import { colors } from '../themes';
 
@@ -16,6 +17,7 @@ export default function Home() {
 			</Head>
 			<main>
 				<Welcome />
+				<PopularItems />
 			</main>
 		</HomeDiv>
 	);

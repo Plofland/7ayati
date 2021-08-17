@@ -35,9 +35,9 @@ export default function Welcome() {
 }
 
 const WelcomeSection = styled.div`
-	// background-color: ${colors.cyanBlue};
-	background: url('../assets/depositphotos_237726120_2-stock-photo-hot-red-coals-for-shisha.jpeg');
-	width: 70%;
+	background-color: ${colors.cyanBlue};
+    background-image: url('../../assets/coals-for-hookah-on-wooden-background-with-dry-oranges-place-for-text_126267-41.jpeg');
+	width: 40%;
 	margin: 30vh auto;
 `;
 
