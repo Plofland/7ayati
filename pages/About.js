@@ -38,39 +38,58 @@ export default function About() {
 					</p>
 				</AboutText>
 				{/* <Image src={RazPortrait.src} alt="Owner Portrait" /> */}
-				<img
-					src={RazPortrait.src}
-					alt="Owner Portrait"
-				/>
+				<ImageContainer>
+					<img
+						src={RazPortrait.src}
+						alt="Owner Portrait"
+					/>
+				</ImageContainer>
+				<DummyDiv />
 			</AboutCard>
 		</AboutSection>
 	);
 }
 
 const AboutSection = styled.div`
-	width: 70%;
+	width: 80%;
 	margin: 15% auto;
 `;
 
 const AboutCard = styled.div`
-	background-color: ${colors.cyanBlue};
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: ${colors.cyanBlue};
+`;
+
+const ImageContainer = styled.div`
+	// border: 2px solid white;
+	margin: auto 0;
+    display: inline-block;
 	position: relative;
 
 	img {
+		display: block;
+        max-width: none;
 		position: absolute;
-		right: 4rem;
-		max-width: 100%;
-		max-height: 120%;
+		top: 50%;
+		left: 50%;
+		min-height: 100%;
+		min-width: 100%;
+		transform: translate(-50%, -50%);
 	}
 `;
 
 const AboutText = styled.div`
+	// border: 2px solid green;
 	text-align: center;
 	width: 50%;
-	margin: 2rem;
+    margin: 1rem;
+
+	p {
+		padding: 1rem;
+		font-size: 0.75rem;
+	}
 `;
 
 const StyledTitle = styled.div`
@@ -78,5 +97,11 @@ const StyledTitle = styled.div`
 	font-size: 3rem;
 	font-weight: bold;
 	margin-left: 0;
-	text-align: left;
+	text-align: center;
+`;
+
+const DummyDiv = styled.div`
+	// background-color: ${colors.darkLavender};
+	// border: 2px solid yellow;
+	width: 3%;
 `;

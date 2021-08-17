@@ -62,11 +62,11 @@ const ImageContainer = styled.div`
 const Title = styled.p`
 	// border: 1px solid white;
 	font-size: 1.2rem;
-    display: flex;
-    padding: 1rem;
+	display: flex;
+	padding: 1rem;
 	height: 30%;
-    align-items: center;
-    justify-content: center
+	align-items: center;
+	justify-content: center;
 `;
 
 const Text = styled.div`
@@ -75,11 +75,10 @@ const Text = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 6;
-    
 `;
 
 const Description = styled.div`
 	// border: 2px solid red;
 	padding: 1rem;
-    flex-grow: inherit;
+	flex-grow: inherit;
 `;

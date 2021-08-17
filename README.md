@@ -21,24 +21,17 @@
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
 
 ### Socialbar
-- [x] Vertical social icons on the right side that will be visible on every page
 
 ### Menu
-- [x] menu card template component built
-- [x] menu divided up into sections Shisha, Hookahs, Coffee, Food
 - [ ] add a little note about buying a hookah
 - [ ] each item's picture sourced from fake DB
 
 ### About
--[] get rid of absolute img
+
 
 ### Hours
-- [x] research flex grow for middle box to auto fill space with ellipses
 
 ### Contact
 - [ ] (Talk with Raz) Do we really need a contact section if they can just click one of the social links or the email icon?
 
 ### Footer
-- [x] miniature hours table
-- [x] horizontal social icons
-- [x] legal stuff in small font (copyright/licenses)
