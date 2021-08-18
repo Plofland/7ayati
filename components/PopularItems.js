@@ -22,7 +22,7 @@ export default function PopularItems() {
 
 const MenuSection = styled.div`
 	// border: 2px solid orange;
-	margin-top: 4rem;
+	margin: 4rem 0;
 	text-align: center;
 `;
 
@@ -37,7 +37,6 @@ const SectionTitle = styled.p`
 const MenuItems = styled.div`
 	// border: 2px solid black;
 	display: flex;
-	// flex-direction: row;
 	margin: 0 4rem;
 	flex-wrap: wrap;
 	justify-content: center;
