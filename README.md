@@ -19,12 +19,15 @@
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
+-   [ ] trim down the height
+-   [ ] use a smaller logo
 
 ### Socialbar
 
 ### Menu
 - [ ] add a little note about buying a hookah
 - [ ] each item's picture sourced from fake DB
+- [ ] fix shisha item conditionally showing tin price •
 
 ### About
 

@@ -11,6 +11,7 @@ export const colors = {
 	darkText: '#222222',
     lightText: '#F9F9F9',
     cyanBlue: '#173755',
+    cyanBlueTrans: 'rgba(23, 55, 85, 0.7)'
 };
 
 export const mq = facepaint(
