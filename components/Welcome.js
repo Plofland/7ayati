@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import hookah from '../assets/hookahFlip.png';
+import hookah from '../public/hookahFlip.png';
 import { colors } from '../themes';
 
 export default function Welcome() {

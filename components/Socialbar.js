@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Socialbar(props) {
 	const { vertical } = props;
 
-    //todo get rid of my email when I get the 7ayati company email
+	//todo get rid of my email when I get the 7ayati company email
 	return vertical ? (
 		<SocialContainerVert>
 			<a
@@ -92,6 +92,6 @@ const SocialContainerHor = styled.div`
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	width: 2rem;
-	margin: 0.5rem;
+	${mq({ width: ['3rem', '2rem'] })};
+	${mq({ margin: ['1rem', '0.5rem'] })};
 `;

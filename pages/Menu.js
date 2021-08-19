@@ -2,8 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import MenuCard from '../components/MenuCard';
 import { menuData } from '../MenuItems';
+import { breakpoints, mq } from '../themes';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Menu() {
+	const isMobile = useMediaQuery({
+		maxWidth: breakpoints.mobile
+	});
+
 	return (
 		<StyledMenu>
 			<MenuSection>
@@ -49,7 +55,9 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-top: 7rem;
+	margin: 7rem 0;
+	${mq({ margin: ['1rem 0', '7rem 0'] })};
+
 `;
 
 const MenuSection = styled.div`
@@ -63,14 +71,14 @@ const SectionTitle = styled.p`
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
-    margin-top: 2rem;
+	margin-top: 2rem;
 `;
 
 const MenuItems = styled.div`
 	// border: 2px solid black;
 	display: flex;
 	flex-direction: row;
-	margin: 0 4rem;
+	${mq({ margin: ['0 1rem', '0 4rem'] })};
 	flex-wrap: wrap;
 	justify-content: center;
 `;

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {popularData} from '../MenuItems'
 import MenuCard from './MenuCard';
+import { mq } from '../themes/index';
+
 
 export default function PopularItems() {
 	return (
@@ -21,23 +23,23 @@ export default function PopularItems() {
 }
 
 const MenuSection = styled.div`
-	// border: 2px solid orange;
+	border: 2px solid orange;
 	margin: 4rem 0;
 	text-align: center;
 `;
 
 const SectionTitle = styled.p`
-	// border: 2px solid red;
+	border: 2px solid red;
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
-	margin-top: 2rem;
 `;
 
 const MenuItems = styled.div`
-	// border: 2px solid black;
+	border: 2px solid black;
 	display: flex;
-	margin: 0 4rem;
+	${mq({ margin: ['0', '0 4rem'] })};
+
 	flex-wrap: wrap;
 	justify-content: center;
 `;
