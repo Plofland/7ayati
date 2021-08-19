@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {popularData} from '../assets/MenuItems'
+import {popularData} from '../MenuItems'
 import MenuCard from './MenuCard';
 
 export default function PopularItems() {
