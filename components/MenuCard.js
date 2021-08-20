@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../themes/index';
+import { colors, mq } from '../themes/index';
 import logo from '../public/Fayati logo light lilac bg200.jpg';
+
 
 export default function MenuCard(props) {
 	const { info } = props;
@@ -29,24 +30,25 @@ export default function MenuCard(props) {
 }
 
 const SingleItem = styled.div`
-	// border: 2px solid white;
+	border: 2px solid white;
 `;
 
 const CardContainer = styled.div`
-	// border: 1px solid yellow;
+	border: 1px solid yellow;
 	text-align: center;
-	margin: 4rem;
-	width: 300px;
+	${mq({ margin: ['1rem', '4rem'] })};
+	${mq({ width: ['150px', '300px'] })};
 	display: flex;
 	aspect-ratio: 1/1;
 	background-color: ${colors.cyanBlue};
 `;
 
 const Card = styled.div`
-	// border: 2px solid white;
+	border: 2px solid white;
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	${mq({ width: ['150px', '200px'] })};
+
 `;
 
 const ImageContainer = styled.div`
@@ -71,7 +73,8 @@ const Title = styled.p`
 
 const Text = styled.div`
 	// border: 1px solid limegreen;
-	font-size: 0.65rem;
+	// font-size: 0.65rem;
+	${mq({ fontSize: ['0.45rem', '0.65rem'] })};
 	display: flex;
 	flex-direction: column;
 	flex-grow: 6;

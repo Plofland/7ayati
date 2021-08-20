@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../themes';
-import coals from '../assets/latbok-n4au.jpeg';
+import { colors, mq } from '../themes';
+import coals from '../public/latbok-n4au.jpeg';
 
 export default function Hours() {
 	return (
@@ -49,18 +49,14 @@ export default function Hours() {
 						<ExpandingEllipse>
 							......................................................................................................
 						</ExpandingEllipse>
-						<p>
-							10am - 2pm & 4pm - 11pm
-						</p>
+						<p>10am - 2pm & 4pm - 11pm</p>
 					</DayRow>
 					<DayRow>
 						<p>Saturday</p>
 						<ExpandingEllipse>
 							......................................................................................................
 						</ExpandingEllipse>
-						<p>
-							10am - 2pm & 4pm - 11pm
-						</p>
+						<p>10am - 2pm & 4pm - 11pm</p>
 					</DayRow>
 				</Schedule>
 			</HoursText>
@@ -73,30 +69,38 @@ export default function Hours() {
 }
 
 const HoursSection = styled.div`
+	border: 1px solid white;
 	width: 70%;
 	margin: 15% auto;
+	${mq({ margin: ['10% auto', '15% auto'] })};
+
 	background-color: ${colors.cyanBlue};
 	display: flex;
-    position: relative;
+	position: relative;
+	${mq({ flexDirection: ['column', 'row'] })};
+
 
 	img {
-		position: absolute;
+		// position: absolute;
+		${mq({ position: ['static', 'absolute'] })};
+
 		right: 2rem;
-        top: -2rem;
+		top: -2rem;
 		max-width: 100%;
 		max-height: 120%;
 	}
 `;
 
 const HoursText = styled.div`
-	width: 50%;
-	margin: 2rem;
+	${mq({ width: ['80%', '50%'] })};
+	margin: 2rem auto;
 `;
 
 const StyledTitle = styled.div`
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
+	${mq({ textAlign: ['center', 'left'] })};
 `;
 
 const Schedule = styled.div`
@@ -105,13 +109,14 @@ const Schedule = styled.div`
 `;
 
 const DayRow = styled.div`
-    display: flex;
+	display: flex;
 	flex-direction: row;
+	// justify-content: space-between;
 `;
 
 const ExpandingEllipse = styled.div`
 	width: 1rem;
-    flex-grow: 1;
-    overflow: hidden;
-    text-overflow: ellipses;
+	flex-grow: 1;
+	overflow: hidden;
+	text-overflow: ellipses;
 `;

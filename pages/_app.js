@@ -7,10 +7,15 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Socialbar from '../components/Socialbar';
+import { useMediaQuery } from 'react-responsive';
 
 library.add(fab, faEnvelope);
 
 function MyApp({ Component, pageProps }) {
+	const isMobile = useMediaQuery({
+		query: '(max-width: 750px)'
+	});
+
 	return (
 		<StyledApp>
 			<Head>
@@ -21,7 +26,7 @@ function MyApp({ Component, pageProps }) {
 				<link
 					rel="preconnect"
 					href="https://fonts.gstatic.com"
-					crossorigin
+					crossOrigin
 				/>
 				<link
 					href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
@@ -34,15 +39,15 @@ function MyApp({ Component, pageProps }) {
 				<link
 					rel="preconnect"
 					href="https://fonts.gstatic.com"
-					crossorigin
+					crossOrigin
 				/>
 				<link
 					href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
 					rel="stylesheet"
 				/>
 			</Head>
-			<Navbar />
-			<Socialbar vertical={true} />
+			{!isMobile && <Navbar />}
+			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
 		</StyledApp>
@@ -52,5 +57,5 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 
 const StyledApp = styled.div`
-  font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Hammersmith One', sans-serif;
 `;

@@ -16,6 +16,8 @@
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
 - [ ] Set up Text component to handle text variants
 
+### Landing Page
+- [ ] Have a Navbar replacement for mobile (maybe just text & logo for now)
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
@@ -28,6 +30,7 @@
 - [ ] add a little note about buying a hookah
 - [ ] each item's picture sourced from fake DB
 - [ ] fix shisha item conditionally showing tin price •
+- [ ] fix menu item photo, make it a consistent size (responsive)
 
 ### About
 

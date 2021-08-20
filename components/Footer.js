@@ -1,9 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../themes';
+import { breakpoints, colors, mq } from '../themes';
 import Socialbar from './Socialbar';
 
+import { useMediaQuery } from 'react-responsive';
+
 export default function Footer() {
+	const isMobile = useMediaQuery({
+		maxWidth: breakpoints.mobile
+	});
+
 	return (
 		<StyledDiv>
 			<StyledHours>
@@ -40,7 +46,7 @@ export default function Footer() {
 					</DayDiv>
 				</HoursTable>
 			</StyledHours>
-			<Socialbar vertical={false} />
+			{isMobile && <Socialbar vertical={false} />}
 			<StyledLegal>
 				Legal Stuff will go here 7ayati Café &
 				Hookah Lounge LLC ©7ayati
@@ -58,7 +64,7 @@ const StyledDiv = styled.div`
 
 const TableTitle = styled.p`
 	font-weight: bold;
-	font-size: 1.5rem;
+	${mq({ fontSize: ['1rem', '1.5rem'] })};
 	margin-bottom: 0.5%;
 `;
 
@@ -73,18 +79,20 @@ const StyledHours = styled.div`
 const HoursTable = styled.div`
 	display: flex;
 	flex-direction: row;
-`;
-
-const DayDiv = styled.div`
+	${mq({ fontSize: ['.5rem', '1rem'] })};
+	`;
+	
+	const DayDiv = styled.div`
 	margin: 0 1rem;
-`;
-
-const DayHours = styled.p`
+	`;
+	
+	const DayHours = styled.p`
 	flex-direction: column;
-`;
-
-const StyledLegal = styled.p`
+	`;
+	
+	const StyledLegal = styled.p`
 	text-align: center;
 	font-size: 12px;
+	${mq({ fontSize: ['.35rem', '.5rem'] })};
 	padding: 0.5% 0;
 `;
