@@ -16,7 +16,9 @@ export default function Socialbar(props) {
 				<SocialIcon icon={['far', 'envelope']} />
 			</a>
 			<a
-				href={'https://instagram.com/'}
+				href={
+					'https://www.instagram.com/7ayatilounge/'
+				}
 				target="_blank"
 			>
 				<SocialIcon icon={['fab', 'instagram']} />
@@ -49,7 +51,9 @@ export default function Socialbar(props) {
 				<SocialIcon icon={['far', 'envelope']} />
 			</a>
 			<a
-				href={'https://instagram.com/'}
+				href={
+					'https://www.instagram.com/7ayatilounge/'
+				}
 				target="_blank"
 			>
 				<SocialIcon icon={['fab', 'instagram']} />

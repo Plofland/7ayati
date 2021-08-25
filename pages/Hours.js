@@ -72,7 +72,7 @@ const HoursSection = styled.div`
 	border: 1px solid white;
 	width: 70%;
 	margin: 15% auto;
-	${mq({ margin: ['10% auto', '15% auto'] })};
+	// ${mq({ margin: ['10% auto', '15% auto'] })};
 
 	background-color: ${colors.cyanBlue};
 	display: flex;
@@ -94,6 +94,7 @@ const HoursSection = styled.div`
 const HoursText = styled.div`
 	${mq({ width: ['80%', '50%'] })};
 	margin: 2rem auto;
+	margin-left: 4rem;
 `;
 
 const StyledTitle = styled.div`
