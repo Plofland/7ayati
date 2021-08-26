@@ -1,12 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/Fayati logo no bg 200px.png';
-import { colors, mq } from '../themes';
+import { colors } from '../themes';
 
 export default function Navbar() {
-	console.log(hayatiLogo)
 	return (
 		<>
 			<StyledLogoBG />
