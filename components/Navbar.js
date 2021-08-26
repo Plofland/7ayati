@@ -49,7 +49,6 @@ export default function Navbar() {
 const StyledLogo = styled.div`
 	margin-bottom: -7%;
 	img {
-		border: 2px solid red;
 		height: 150px;
 	}
 `;
@@ -57,18 +56,17 @@ const StyledLogo = styled.div`
 const StyledLogoBG = styled.div`
 	background-color: ${colors.grayChateau};
 	border-radius: 50%;
-	width: 20%;
+	width: 26%;
 	height: 20%;
 	position: absolute;
 	z-index: -1;
-	margin: 0 38%;
+	margin: 0 35.5%;
 `;
 
 const StyledNav = styled.nav`
 	background-color: ${colors.grayChateau};
 	display: flex;
 	justify-content: space-evenly;
-	border: 1px solid black;
 `;
 
 const StyledNavLink = styled.div`
@@ -78,5 +76,4 @@ const StyledNavLink = styled.div`
 	font-weight: bold;
 	font-size: 2rem;
 	cursor: pointer;
-	border: 1px solid white;
 `;
