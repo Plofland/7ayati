@@ -21,8 +21,8 @@
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
--   [ ] trim down the height
--   [ ] use a smaller logo
+-   [x] trim down the height
+-   [x] use a smaller logo
 
 ### Socialbar
 
@@ -38,6 +38,5 @@
 ### Hours
 
 ### Contact
-- [ ] (Talk with Raz) Do we really need a contact section if they can just click one of the social links or the email icon?
 
 ### Footer
