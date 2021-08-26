@@ -62,9 +62,6 @@ const ImageContainer = styled.div`
 		display: block;
 		position: absolute;
 		left: 55%;
-		// min-height: 100%;
-		min-width: 300px;
-		max-width: 600px;
 		transform: translate(-50%, -50%);
 	}
 `;
