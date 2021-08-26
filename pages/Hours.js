@@ -69,7 +69,7 @@ export default function Hours() {
 }
 
 const HoursSection = styled.div`
-	border: 1px solid white;
+	// border: 1px solid white;
 	width: 70%;
 	margin: 15% auto;
 	// ${mq({ margin: ['10% auto', '15% auto'] })};

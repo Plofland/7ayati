@@ -3,9 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/Fayati logo no bg 200px.png';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 
 export default function Navbar() {
+	console.log(hayatiLogo)
 	return (
 		<>
 			<StyledLogoBG />
@@ -23,8 +24,8 @@ export default function Navbar() {
 				<StyledLogo>
 					<Link href="/" className="">
 						<a>
-							<Image
-								src={hayatiLogo}
+							<img
+								src={hayatiLogo.src}
 								alt="7ayati company logo"
 							/>
 						</a>
@@ -46,31 +47,36 @@ export default function Navbar() {
 }
 
 const StyledLogo = styled.div`
-	margin-bottom: -6%;
+	margin-bottom: -7%;
+	img {
+		border: 2px solid red;
+		height: 150px;
+	}
 `;
 
 const StyledLogoBG = styled.div`
 	background-color: ${colors.grayChateau};
 	border-radius: 50%;
-	width: 25%;
-	height: 26%;
+	width: 20%;
+	height: 20%;
 	position: absolute;
 	z-index: -1;
-	margin: 0 36%;
+	margin: 0 38%;
 `;
 
 const StyledNav = styled.nav`
 	background-color: ${colors.grayChateau};
 	display: flex;
 	justify-content: space-evenly;
-	align-items: start;
+	border: 1px solid black;
 `;
 
 const StyledNavLink = styled.div`
 	font-family: 'Great Vibes', cursive;
 	color: ${colors.darkText};
-	padding: 2rem;
+	padding: 1rem;
 	font-weight: bold;
 	font-size: 2rem;
 	cursor: pointer;
+	border: 1px solid white;
 `;
