@@ -7,7 +7,19 @@ import { colors } from '../themes';
 export default function Navbar() {
 	return (
 		<>
-			<StyledLogoBG />
+			<StyledBackground>
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none"
+				>
+					<path
+						d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+						class="shape-fill"
+					></path>
+				</svg>
+			</StyledBackground>
 			<StyledNav>
 				<Link href="/menu" className="" passHref>
 					<StyledNavLink>
@@ -47,24 +59,33 @@ export default function Navbar() {
 const StyledLogo = styled.div`
 	margin-bottom: -7%;
 	img {
-		height: 150px;
+		height: 120px;
 	}
 `;
 
-const StyledLogoBG = styled.div`
-	background-color: ${colors.grayChateau};
-	border-radius: 50%;
-	width: 26%;
-	height: 20%;
-	position: absolute;
-	z-index: -1;
-	margin: 0 35.5%;
-`;
-
 const StyledNav = styled.nav`
-	background-color: ${colors.grayChateau};
 	display: flex;
 	justify-content: space-evenly;
+`;
+
+const StyledBackground = styled.div`
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	z-index: -1;
+
+	svg {
+		position: relative;
+		display: block;
+		width: calc(100% + 1.3px);
+		height: 140px;
+	}
+	.shape-fill {
+		fill: ${colors.grayChateau};
+	}
 `;
 
 const StyledNavLink = styled.div`
