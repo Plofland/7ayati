@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 // import Image from 'next/image';
 import RazPortrait from '../public/RazPortrait.JPG';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 
 export default function About() {
 	return (
@@ -44,7 +44,6 @@ export default function About() {
 						alt="Owner Portrait"
 					/>
 				</ImageContainer>
-				<DummyDiv />
 			</AboutCard>
 		</AboutSection>
 	);
@@ -57,38 +56,35 @@ const AboutSection = styled.div`
 
 const AboutCard = styled.div`
 	display: flex;
+	${mq({ flexDirection: ['column', 'row'] })};
 	align-items: center;
 	justify-content: space-between;
 	background-color: ${colors.cyanBlue};
 `;
 
-const ImageContainer = styled.div`
-	// border: 2px solid white;
-	margin: auto 0;
-    display: inline-block;
-	position: relative;
-
-	img {
-		display: block;
-        max-width: none;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		min-height: 100%;
-		min-width: 100%;
-		transform: translate(-50%, -50%);
-	}
-`;
-
 const AboutText = styled.div`
-	// border: 2px solid green;
+	border: 2px solid green;
 	text-align: center;
 	width: 50%;
-    margin: 1rem;
+	margin: 1rem;
 
 	p {
 		padding: 1rem;
 		font-size: 0.75rem;
+	}
+`;
+
+const ImageContainer = styled.div`
+	border: 2px solid white;
+	position: relative;
+	width: 30%;
+	height: 50%;
+	// ${mq({ height: ['50%', '0'] })};
+
+	img {
+		position: absolute;
+		opacity: 50%;
+		transform: translate(-25%, -50%);
 	}
 `;
 
@@ -98,10 +94,4 @@ const StyledTitle = styled.div`
 	font-weight: bold;
 	margin-left: 0;
 	text-align: center;
-`;
-
-const DummyDiv = styled.div`
-	// background-color: ${colors.darkLavender};
-	// border: 2px solid yellow;
-	width: 3%;
 `;
