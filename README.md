@@ -28,9 +28,10 @@
 
 ### Menu
 - [ ] add a little note about buying a hookah
+- [ ] "Want to mix flavors?" note under Shisha
 - [ ] each item's picture sourced from fake DB
-- [ ] fix shisha item conditionally showing tin price •
-- [ ] fix menu item photo, make it a consistent size (responsive)
+- [x] fix shisha item conditionally showing tin price •
+- [x] fix menu item photo, make it a consistent size (responsive)
 
 ### About
 

@@ -55,9 +55,8 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 7rem 0;
-	${mq({ margin: ['1rem 0', '7rem 0'] })};
-
+	// ${mq({ margin: ['5vh 0', '5vh 0'] })};
+	margin: 5vh 0;
 `;
 
 const MenuSection = styled.div`
@@ -80,5 +79,5 @@ const MenuItems = styled.div`
 	flex-direction: row;
 	${mq({ margin: ['0 1rem', '0 4rem'] })};
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 `;

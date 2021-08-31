@@ -36,12 +36,13 @@ export default function Welcome() {
 
 const WelcomeSection = styled.div`
 	// border: 1px solid white;
-	width: 80%;
-	height: 90vh;
-	margin: 30vh auto;
+	width: 70%;
+	height: 70vh;
+	margin: 10vh auto 30vh auto;
 	background-image: url(${hookah.src});
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-attachment: fixed;
 	display: flex;
 `;
 
@@ -50,8 +51,8 @@ const WelcomeDiv = styled.div`
 	display: flex;
 	width: 45%;
 	flex-direction: column;
-	justify-content: flex-end;
-    padding-right: 4rem;
+	justify-content: center;
+	padding-right: 4rem;
 	background-image: linear-gradient(
 		to right,
 		${colors.cyanBlue},
@@ -66,13 +67,13 @@ const SectionTitle = styled.div`
 	font-size: 3rem;
 	font-weight: bold;
 	text-align: center;
-	margin: 1rem 2rem;
+	margin-bottom: 2rem;
 `;
 
 const Text = styled.div`
 	// border: 1px solid green;
 	text-align: center;
-	margin: 1rem 2rem 6rem 2rem;
+	margin: 0 auto;
 	font-size: 0.8rem;
 
 	p {
