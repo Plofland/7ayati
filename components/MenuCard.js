@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { colors, mq } from '../themes/index';
 import logo from '../public/Fayati logo light lilac bg200.jpg';
 
-
 export default function MenuCard(props) {
 	const { info } = props;
 	return (
@@ -12,7 +11,12 @@ export default function MenuCard(props) {
 				<Card>
 					<Title>{info.name}</Title>
 					<Text>
-						<p>{info.price}</p>
+						<Prices>
+							<p>{info.price}</p>
+							{info.tinPrice && (
+								<p>&nbsp; • {info.tinPrice}</p>
+							)}
+						</Prices>
 						<Description>
 							{info.description}
 						</Description>
@@ -48,7 +52,6 @@ const Card = styled.div`
 	display: flex;
 	flex-direction: column;
 	${mq({ width: ['150px', '200px'] })};
-
 `;
 
 const ImageContainer = styled.div`
@@ -78,6 +81,11 @@ const Text = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-grow: 6;
+`;
+
+const Prices = styled.div`
+	display: flex;
+	justify-content: center;
 `;
 
 const Description = styled.div`
