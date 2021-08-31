@@ -8,20 +8,22 @@ export default function MenuCard(props) {
 	return (
 		<SingleItem>
 			<CardContainer>
-				<Card>
+				<CardInfo>
 					<Title>{info.name}</Title>
 					<Text>
 						<Prices>
 							<p>{info.price}</p>
 							{info.tinPrice && (
-								<p>&nbsp; • {info.tinPrice}</p>
+								<p>
+									&nbsp; • {info.tinPrice}
+								</p>
 							)}
 						</Prices>
 						<Description>
 							{info.description}
 						</Description>
 					</Text>
-				</Card>
+				</CardInfo>
 				<ImageContainer>
 					<img
 						src={logo.src}
@@ -34,12 +36,11 @@ export default function MenuCard(props) {
 }
 
 const SingleItem = styled.div`
-	border: 2px solid white;
-
+	// border: 2px solid white;
 `;
 
 const CardContainer = styled.div`
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 	text-align: center;
 	${mq({ margin: ['1rem', '4rem'] })};
 	${mq({ width: ['150px', '275px'] })};
@@ -48,22 +49,22 @@ const CardContainer = styled.div`
 	background-color: ${colors.cyanBlue};
 `;
 
-const Card = styled.div`
+const CardInfo = styled.div`
 	// border: 2px solid white;
 	display: flex;
 	flex-direction: column;
-	${mq({ width: ['150px', '200px'] })};
+	${mq({ width: ['60%', '50%'] })};
 `;
 
 const ImageContainer = styled.div`
-	border: 2px solid white;
+	// border: 2px solid blue;
 	margin: auto 0;
 	position: relative;
-	width: 50%;
+	${mq({ width: ['40%', '50%'] })};
 	height: 100%;
 	display: flex;
 	align-items: center;
-	
+
 	img {
 		position: absolute;
 		max-width: 150%;
@@ -73,20 +74,21 @@ const ImageContainer = styled.div`
 
 const Title = styled.p`
 	// border: 1px solid white;
-	font-size: 1.2rem;
+	${mq({ fontSize: ['.8rem', '1.2rem'] })};
+	${mq({ padding: ['.2rem', '1rem'] })};
+
 	display: flex;
-	padding: 1rem;
 	height: 30%;
 	align-items: center;
 	justify-content: center;
 `;
 
 const Text = styled.div`
-	border: 1px solid limegreen;
-	${mq({ fontSize: ['0.45rem', '0.65rem'] })};
+	// border: 1px solid limegreen;
+	${mq({ fontSize: ['0.4rem', '0.65rem'] })};
+	height: 70%;
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
 `;
 
 const Prices = styled.div`
@@ -96,6 +98,6 @@ const Prices = styled.div`
 
 const Description = styled.div`
 	// border: 2px solid red;
-	padding: 1rem .5rem;
-	flex-grow: inherit;
+	${mq({ padding: ['.4rem .5rem', '1rem 0.75rem'] })};
+	height: 100%;
 `;

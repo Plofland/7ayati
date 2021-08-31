@@ -1,3 +1,5 @@
+//Please keep descriptions around 200 character or less
+
 export const menuData = {
 	drinks: [
 		{
@@ -19,7 +21,7 @@ export const menuData = {
 			index: 'd3',
 			price: '$8',
 			description:
-				'Cold brew coffee made locally guaranteed to send you flying.'
+				'Cold brew coffee made locally guaranteed to send you flying. Courtesy of our friends over at Uel Zing'
 		},
 		{
 			name: 'Iced Tea',
@@ -75,7 +77,7 @@ export const menuData = {
 			price: '$8',
 			tinPrice: '$25',
 			description:
-				'Dark Vanilla is a powerful, robust blend of vanilla shisha with lasting effects. Great as a mixer, this Dark Vanilla pairs with other Starbuzz Vintage flavors nicely, but can also smoke well on its own.'
+				'Dark Vanilla is a powerful, robust blend of vanilla shisha with lasting effects. Great as a mixer, this Dark Vanilla pairs with others, but can also smoke well on its own.'
 		},
 		{
 			name: 'Peach',
@@ -99,7 +101,7 @@ export const menuData = {
 			price: '$8',
 			tinPrice: '$25',
 			description:
-				'Ginkco packs a wallop of flavorful intricacies and tones. Upon smoking this flavor, we immediately catch notes of honey, ginger and a light sprinkle of mint. This is a great afternoon bowl on a hot summer day.'
+				'Ginkco packs a wallop of flavorful intricacies and tones. Catch notes of honey, ginger and a light sprinkle of mint. This is a great afternoon bowl on a hot summer day.'
 		},
 		{
 			name: 'Alaskan Freeze',
@@ -116,8 +118,12 @@ export const menuData = {
 			tinPrice: '$25',
 			description:
 				'A deliciously tangy and sour plain lime flavor. The flavor translates well from the taste, not featuring as much of the strong tobacco notes as others in the Vintage line.'
-		},
-	],
+		}
+	]
 };
 
-export const popularData = [menuData.hookah[1], menuData.food[0], menuData.drinks[2]]
+export const popularData = [
+	menuData.hookah[1],
+	menuData.food[0],
+	menuData.drinks[2]
+];
