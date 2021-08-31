@@ -34,14 +34,15 @@ export default function MenuCard(props) {
 }
 
 const SingleItem = styled.div`
-	// border: 2px solid white;
+	border: 2px solid white;
+
 `;
 
 const CardContainer = styled.div`
-	// border: 1px solid yellow;
+	border: 1px solid yellow;
 	text-align: center;
 	${mq({ margin: ['1rem', '4rem'] })};
-	${mq({ width: ['150px', '300px'] })};
+	${mq({ width: ['150px', '275px'] })};
 	display: flex;
 	aspect-ratio: 1/1;
 	background-color: ${colors.cyanBlue};
@@ -55,10 +56,16 @@ const Card = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	// border: 2px solid white;
+	border: 2px solid white;
 	margin: auto 0;
-
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	
 	img {
+		position: absolute;
 		max-width: 150%;
 		max-height: 150%;
 	}
@@ -75,12 +82,11 @@ const Title = styled.p`
 `;
 
 const Text = styled.div`
-	// border: 1px solid limegreen;
-	// font-size: 0.65rem;
+	border: 1px solid limegreen;
 	${mq({ fontSize: ['0.45rem', '0.65rem'] })};
 	display: flex;
 	flex-direction: column;
-	flex-grow: 6;
+	flex-grow: 1;
 `;
 
 const Prices = styled.div`
@@ -90,6 +96,6 @@ const Prices = styled.div`
 
 const Description = styled.div`
 	// border: 2px solid red;
-	padding: 1rem;
+	padding: 1rem .5rem;
 	flex-grow: inherit;
 `;
