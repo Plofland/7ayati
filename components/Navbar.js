@@ -7,19 +7,6 @@ import { colors } from '../themes';
 export default function Navbar() {
 	return (
 		<>
-			<StyledBackground>
-				<svg
-					data-name="Layer 1"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none"
-				>
-					<path
-						d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-						className="shape-fill"
-					></path>
-				</svg>
-			</StyledBackground>
 			<StyledNav>
 				<Link href="/menu" className="" passHref>
 					<StyledNavLink>
@@ -40,6 +27,17 @@ export default function Navbar() {
 							/>
 						</a>
 					</Link>
+					{/* <StyledBackground>
+						<svg
+							id="triangle"
+							viewBox="0 0 100 100"
+						>
+							<polygon
+								fill={colors.grayChateau}
+								points="50 15, 100 100, 0 100,"
+							/>
+						</svg>
+					</StyledBackground> */}
 				</StyledLogo>
 				<Link href="/hours" className="" passHref>
 					<StyledNavLink>
@@ -56,43 +54,51 @@ export default function Navbar() {
 	);
 }
 
+const StyledNav = styled.nav`
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 0.25rem;
+`;
+
 const StyledLogo = styled.div`
 	img {
 		height: 120px;
 	}
 `;
 
-const StyledNav = styled.nav`
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: .25rem;
-`;
+// const StyledBackground = styled.div`
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	overflow: hidden;
+// 	// line-height: 0;
+// 	z-index: -1;
+// 	transform: rotate(180deg);
+// 	// display: flex;
+// 	// justify-content: center;
 
-const StyledBackground = styled.div`
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	z-index: -1;
-
-	svg {
-		position: relative;
-		display: block;
-		width: calc(100% + 1.3px);
-		height: 140px;
-	}
-	.shape-fill {
-		fill: ${colors.grayChateau};
-	}
-`;
+// 	svg {
+// 		// position: relative;
+// 		// display: block;
+// 		// width: calc(100% + 1.3px);
+// 		// width: 10%;
+// 		height: 220px;
+// 		// margin: 0 auto;
+// 		// margin-left: 43vw;
+// 		// margin-right: 51%;
+// 	}
+// `;
 
 const StyledNavLink = styled.div`
 	font-family: 'Great Vibes', cursive;
-	color: ${colors.darkText};
+	color: ${colors.lightText};
 	padding: 1rem;
 	font-weight: bold;
 	font-size: 2rem;
 	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	&:hover {
+		transform: translate(0, 1rem);
+	}
 `;
