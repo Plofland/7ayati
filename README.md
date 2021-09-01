@@ -14,15 +14,13 @@
 
 ### General Styling
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
+- [ ] Make and then use a new light version of the logo to stand out against the dark background
 - [ ] Set up Text component to handle text variants
 
 ### Landing Page
-- [ ] Have a Navbar replacement for mobile (maybe just text & logo for now)
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
--   [x] trim down the height
--   [x] use a smaller logo
 
 ### Socialbar
 
@@ -30,8 +28,6 @@
 - [ ] add a little note about buying a hookah
 - [ ] "Want to mix flavors?" note under Shisha
 - [ ] each item's picture sourced from fake DB
-- [x] fix shisha item conditionally showing tin price •
-- [x] fix menu item photo, make it a consistent size (responsive)
 
 ### About
 
@@ -39,5 +35,6 @@
 ### Hours
 
 ### Contact
+- [ ] give the call to action button a call to action color
 
 ### Footer
