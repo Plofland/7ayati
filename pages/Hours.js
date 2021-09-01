@@ -70,20 +70,16 @@ export default function Hours() {
 
 const HoursSection = styled.div`
 	// border: 1px solid white;
-	width: 70%;
-	margin: 15% auto;
-	// ${mq({ margin: ['10% auto', '15% auto'] })};
-
-	background-color: ${colors.cyanBlue};
 	display: flex;
-	position: relative;
 	${mq({ flexDirection: ['column', 'row'] })};
+	position: relative;
+	${mq({ width: ['90%', '70%'] })};
+	${mq({ margin: ['10% auto', '10% auto'] })};
+	background-color: ${colors.cyanBlue};
 
 
 	img {
-		// position: absolute;
 		${mq({ position: ['static', 'absolute'] })};
-
 		right: 2rem;
 		top: -2rem;
 		max-width: 100%;
@@ -93,8 +89,7 @@ const HoursSection = styled.div`
 
 const HoursText = styled.div`
 	${mq({ width: ['80%', '50%'] })};
-	margin: 2rem auto;
-	margin-left: 4rem;
+	${mq({ margin: ['2rem auto', '2rem 4rem'] })};
 `;
 
 const StyledTitle = styled.div`
@@ -112,7 +107,10 @@ const Schedule = styled.div`
 const DayRow = styled.div`
 	display: flex;
 	flex-direction: row;
-	// justify-content: space-between;
+
+	p {
+		text-align: center;
+	}
 `;
 
 const ExpandingEllipse = styled.div`

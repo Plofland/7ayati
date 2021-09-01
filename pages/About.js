@@ -50,8 +50,8 @@ export default function About() {
 }
 
 const AboutSection = styled.div`
-	width: 80%;
-	margin: 15% auto;
+	margin: 10% auto;
+	${mq({ width: ['90%', '70%'] })};
 `;
 
 const AboutCard = styled.div`
@@ -63,9 +63,9 @@ const AboutCard = styled.div`
 `;
 
 const AboutText = styled.div`
-	border: 2px solid green;
+	// border: 2px solid green;
 	text-align: center;
-	width: 50%;
+	${mq({ width: ['90%', '50%'] })};
 	margin: 1rem;
 
 	p {
@@ -75,16 +75,18 @@ const AboutText = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	border: 2px solid white;
+	// border: 2px solid white;
+	display: flex;
+	justify-content: center;
 	position: relative;
-	width: 30%;
-	height: 50%;
-	// ${mq({ height: ['50%', '0'] })};
+	margin: 2rem 1rem;
+	${mq({ width: ['80%', '30%'] })};
 
 	img {
-		position: absolute;
-		opacity: 50%;
-		transform: translate(-25%, -50%);
+		${mq({ position: ['static', 'absolute'] })};
+		${mq({
+			transform: ['none', 'translate(-25%, -50%)']
+		})};
 	}
 `;
 

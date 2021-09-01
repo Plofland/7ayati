@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import hookah from '../public/hookahFlip.png';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 
 export default function Welcome() {
 	return (
@@ -22,11 +22,7 @@ export default function Welcome() {
 						Richard McClintock, a Latin
 						professor at Hampden-Sydney College
 						in Virginia, looked up one of the
-						more obscure Latin words,
-						consectetur, from a Lorem Ipsum
-						passage, and going through the cites
-						of the word in classical literature,
-						di
+						more obscure Latin words
 					</p>
 				</Text>
 			</WelcomeDiv>
@@ -36,23 +32,25 @@ export default function Welcome() {
 
 const WelcomeSection = styled.div`
 	// border: 1px solid white;
-	width: 70%;
+	${mq({ width: ['90%', '70%'] })};
 	height: 70vh;
 	margin: 10vh auto 30vh auto;
 	background-image: url(${hookah.src});
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
 	display: flex;
 `;
 
 const WelcomeDiv = styled.div`
 	// border: 1px solid black;
 	display: flex;
-	width: 45%;
+	${mq({ width: ['100%', '45%'] })};
 	flex-direction: column;
 	justify-content: center;
-	padding-right: 4rem;
+	${mq({ paddingRight: ['0', '4rem'] })};
+
 	background-image: linear-gradient(
 		to right,
 		${colors.cyanBlue},
@@ -65,6 +63,7 @@ const SectionTitle = styled.div`
 	// border: 1px solid orange;
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
+	${mq({ fontSize: ['2rem', '3rem'] })};
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 2rem;

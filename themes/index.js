@@ -20,8 +20,3 @@ export const mq = facepaint(
 		(bp) => `@media (min-width: ${bp})`
 	)
 );
-
-// export const theme = {
-//     breakpoints,
-//     colors,
-// }
