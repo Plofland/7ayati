@@ -51,7 +51,7 @@ export default function About() {
 
 const AboutSection = styled.div`
 	margin: 15% auto;
-	${mq({ width: ['90%', '80%'] })};
+	${mq({ width: ['90%', '70%'] })};
 `;
 
 const AboutCard = styled.div`
@@ -76,15 +76,17 @@ const AboutText = styled.div`
 
 const ImageContainer = styled.div`
 	// border: 2px solid white;
-	position: relative;
 	display: flex;
 	justify-content: center;
+	position: relative;
 	margin: 2rem 1rem;
 	${mq({ width: ['80%', '30%'] })};
-	
+
 	img {
 		${mq({ position: ['static', 'absolute'] })};
-		${mq({ transform: ['none', 'translate(-25%, -50%)'] })};
+		${mq({
+			transform: ['none', 'translate(-25%, -50%)']
+		})};
 	}
 `;
 

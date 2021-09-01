@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 import largeParty from '../public/largeParty.jpeg';
 
 export default function Contact() {
@@ -26,8 +26,8 @@ export default function Contact() {
 				</p>
 				<p>
 					If you are looking to rent 7ayati as a
-					venue for the day or just a night, please give us
-					a 4 week notice.
+					venue for the day or just a night,
+					please give us a 4 week notice.
 				</p>
 			</ContactText>
 			<ImageContainer>
@@ -41,36 +41,22 @@ export default function Contact() {
 }
 
 const ContactSection = styled.div`
-    // border: 1px solid white;
+	// border: 1px solid yellow;
 	background-color: gray;
-	width: 70%;
-	margin: 8rem auto 6rem auto;
+	${mq({ width: ['90%', '70%'] })};
+	margin: 15% auto;
 	display: flex;
+	${mq({ flexDirection: ['column', 'row'] })};
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	background-color: ${colors.cyanBlue};
-`;
-
-const ImageContainer = styled.div`
-	// border: 2px solid white;
-	margin: auto 0;
-	display: inline-block;
-	position: relative;
-	width: 100%;
-
-	img {
-		display: block;
-		position: absolute;
-		left: 55%;
-		transform: translate(-50%, -50%);
-	}
 `;
 
 const ContactText = styled.div`
 	// border: 2px solid green;
 	text-align: center;
-	width: 60%;
-	margin: 2rem 1rem;
+	${mq({ width: ['90%', '50%'] })};
+	${mq({ margin: ['2rem 1rem', '2rem 0 2rem 1rem'] })};
 
 	p {
 		padding: 1rem;
@@ -95,6 +81,21 @@ const CTAButton = styled.a`
 	font-weight: bold;
 	font-style: italic;
 	padding: 0.5rem 2rem;
-	// text-decoration: none;
 	margin: 2rem;
+`;
+
+const ImageContainer = styled.div`
+	// border: 2px solid white;
+	display: flex;
+	position: relative;
+	${mq({ margin: ['0 1rem 2rem 1rem', '2rem 0'] })};
+	${mq({ width: ['90%', '100%'] })};
+	align-items: center;
+
+	img {
+		${mq({
+			transform: ['none', 'translate(8%, 0%)']
+		})};
+	}
+
 `;

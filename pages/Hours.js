@@ -73,7 +73,7 @@ const HoursSection = styled.div`
 	display: flex;
 	${mq({ flexDirection: ['column', 'row'] })};
 	position: relative;
-	width: 70%;
+	${mq({ width: ['90%', '70%'] })};
 	${mq({ margin: ['10% auto', '15% auto'] })};
 	background-color: ${colors.cyanBlue};
 
