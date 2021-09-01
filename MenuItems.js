@@ -1,4 +1,4 @@
-//Please keep descriptions around 200 character or less
+//Please keep descriptions around 200 characters or less
 
 export const menuData = {
 	drinks: [
@@ -77,7 +77,7 @@ export const menuData = {
 			price: '$8',
 			tinPrice: '$25',
 			description:
-				'Dark Vanilla is a powerful, robust blend of vanilla shisha with lasting effects. Great as a mixer, this Dark Vanilla pairs with others, but can also smoke well on its own.'
+				'Dark Vanilla is a powerful, robust blend of vanilla shisha. Great as a mixer, this Dark Vanilla pairs with others, but can also smoke well on its own.'
 		},
 		{
 			name: 'Peach',

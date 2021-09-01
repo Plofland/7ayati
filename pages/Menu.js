@@ -55,8 +55,7 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	// ${mq({ margin: ['5vh 0', '5vh 0'] })};
-	margin: 5vh 0;
+	margin: 5% 0;
 `;
 
 const MenuSection = styled.div`
@@ -68,9 +67,8 @@ const MenuSection = styled.div`
 const SectionTitle = styled.p`
 	// border: 2px solid red;
 	font-family: 'Great Vibes', cursive;
-	font-size: 3rem;
+	${mq({ fontSize: ['2rem', '3rem'] })};
 	font-weight: bold;
-	margin-top: 2rem;
 `;
 
 const MenuItems = styled.div`

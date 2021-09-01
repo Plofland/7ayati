@@ -74,9 +74,8 @@ const ImageContainer = styled.div`
 
 const Title = styled.p`
 	// border: 1px solid white;
-	${mq({ fontSize: ['.8rem', '1.2rem'] })};
+	${mq({ fontSize: ['.7rem', '1.2rem'] })};
 	${mq({ padding: ['.2rem', '1rem'] })};
-
 	display: flex;
 	height: 30%;
 	align-items: center;
@@ -85,7 +84,7 @@ const Title = styled.p`
 
 const Text = styled.div`
 	// border: 1px solid limegreen;
-	${mq({ fontSize: ['0.4rem', '0.65rem'] })};
+	${mq({ fontSize: ['0.4rem', '0.5rem'] })};
 	height: 70%;
 	display: flex;
 	flex-direction: column;
@@ -98,6 +97,7 @@ const Prices = styled.div`
 
 const Description = styled.div`
 	// border: 2px solid red;
-	${mq({ padding: ['.4rem .5rem', '1rem 0.75rem'] })};
 	height: 100%;
+	${mq({ padding: ['.4rem .5rem', '1rem 0.75rem'] })};
+	${mq({ fontSize: ['0.4rem', '0.7rem'] })};
 `;

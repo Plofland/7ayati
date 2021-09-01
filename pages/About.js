@@ -50,7 +50,7 @@ export default function About() {
 }
 
 const AboutSection = styled.div`
-	margin: 15% auto;
+	margin: 10% auto;
 	${mq({ width: ['90%', '70%'] })};
 `;
 
