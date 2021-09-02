@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import styled from 'styled-components';
 import PopularItems from '../components/PopularItems';
 import Welcome from '../components/Welcome';
-import { colors } from '../themes';
 
 export default function Home() {
 	return (
@@ -22,7 +20,3 @@ export default function Home() {
 		</>
 	);
 }
-
-// const HomeDiv = styled.div`
-// 	background-color: ${colors.darkLavender};
-// `;

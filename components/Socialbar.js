@@ -86,14 +86,19 @@ const SocialContainerVert = styled.div`
 	position: absolute;
 	right: 2rem;
 	margin-top: 2rem;
-	color: ${colors.lightText};
-	color: white;
 	z-index: 99;
+
+	a{
+		color: ${colors.lightText};
+	}
 `;
 const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
-	color: ${colors.darkText};
+	
+	a{
+		color: ${colors.darkText};
+	}
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
