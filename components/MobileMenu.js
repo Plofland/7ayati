@@ -1,24 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
-import { useMediaQuery } from 'react-responsive';
 import { colors } from '../themes';
 
-export default function MobileMenu() {
-	const [visible, setVisible] = useState(false);
-
-	const isMobile = useMediaQuery({
-		query: '(max-width: 750px)'
-	});
-
-	useEffect(() => {
-		isMobile ? setVisible(true) : setVisible(false);
-	}, []);
-
-	console.log(visible);
+export default function MobileMenu({visible}) {
 	return (
 		<>
-			<StyledMenu>
+			<StyledMenu visible={visible}>
 				<Link href="/menu" className="" passHref>
 					<StyledNavLink>
 						<p>Menu</p>
@@ -58,6 +46,8 @@ const StyledMenu = styled.div`
 	left: 0;
 	transition: transform 0.3s ease-in-out;
 	z-index: 10;
+	transform: translateX(-100%);
+	transform: ${({ visible }) => visible ? 'translateX(0)' : 'translateX(-100%)'};
 
 	&:focus {
 		outline: none;

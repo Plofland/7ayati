@@ -1,25 +1,29 @@
+import React, {useState} from 'react';
 import '../styles/index.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import Head from 'next/head';
 import styled from 'styled-components';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import Socialbar from '../components/Socialbar';
 import { useMediaQuery } from 'react-responsive';
+
+//Components
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Socialbar from '../components/Socialbar';
 import Hamburger from '../components/Hamburger';
 import MobileMenu from '../components/MobileMenu';
 
+//Icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-library.add(fab, fas, far, faEnvelope);
+library.add(fab, faEnvelope);
 
 function MyApp({ Component, pageProps }) {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 750px)'
 	});
+
+	const [ visible, setVisible ] = useState(false);
 
 	return (
 		<StyledApp>
@@ -51,8 +55,14 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
-			{isMobile ? <Hamburger /> : <Navbar />}
-			{/* {isMobile ? <MobileMenu/> : <Navbar />} */}
+			{isMobile ? (
+				<div>
+					<Hamburger visible={visible} setVisible={setVisible}/>
+					<MobileMenu visible={visible} setVisible={setVisible}/>
+				</div>
+			) : (
+				<Navbar />
+			)}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
