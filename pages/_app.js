@@ -1,9 +1,9 @@
 import React, {useState, useRef} from 'react';
-import '../styles/index.css';
 import Head from 'next/head';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from '../utils/hook';
+import { colors, GlobalStyles } from '../themes';
 
 
 //Components
@@ -22,7 +22,7 @@ library.add(fab, faEnvelope);
 
 function MyApp({ Component, pageProps }) {
 	const isMobile = useMediaQuery({
-		query: '(max-width: 750px)'
+		query: '(max-width: 480px)'
 	});
 
 	const [ visible, setVisible ] = useState(false);
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
 
 
 	return (
-		<StyledApp>
+		<>
 			<Head>
 				<link
 					rel="preconnect"
@@ -61,6 +61,7 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
+			<GlobalStyles />
 			{isMobile ? (
 				<div ref={node}>
 					<Hamburger visible={visible} setVisible={setVisible}/>
@@ -72,12 +73,13 @@ function MyApp({ Component, pageProps }) {
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
-		</StyledApp>
+		</>
 	);
 }
 
 export default MyApp;
 
-const StyledApp = styled.div`
-	font-family: 'Hammersmith One', sans-serif;
-`;
+// const StyledApp = styled.div`
+// 	font-family: 'Hammersmith One', sans-serif;
+// 	background: ${colors.darkLavender};
+// `;
