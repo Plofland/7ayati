@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import '../styles/index.css';
 import Head from 'next/head';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
+import { useOnClickOutside } from '../utils/hook';
+
 
 //Components
 import Navbar from '../components/Navbar';
@@ -24,6 +26,10 @@ function MyApp({ Component, pageProps }) {
 	});
 
 	const [ visible, setVisible ] = useState(false);
+
+	const node = useRef(); 
+	useOnClickOutside(node, () => setVisible(false));
+
 
 	return (
 		<StyledApp>
@@ -56,7 +62,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			{isMobile ? (
-				<div>
+				<div ref={node}>
 					<Hamburger visible={visible} setVisible={setVisible}/>
 					<MobileMenu visible={visible} setVisible={setVisible}/>
 				</div>

@@ -29,6 +29,9 @@ const BarContainer = styled.button`
 	background: transparent;
 	border: none;
 	position: fixed;
+    transform: ${({ visible }) =>
+				visible ? 'translateX(60vw)' : 'translateX(0)'};
+    transition: .3s ease-in-out;
 	cursor: pointer;
 	padding: 0;
 	z-index: 12;
@@ -40,7 +43,6 @@ const BarContainer = styled.button`
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		// background: ${colors.lightLavender};
 		background: ${({ visible }) =>
 			visible
 				? colors.darkLavender
@@ -52,7 +54,7 @@ const BarContainer = styled.button`
 
 		:first-child {
 			transform: ${({ visible }) =>
-				visible ? 'rotate(45deg)' : 'rotate(0)'};
+				visible ? 'rotate(48deg)' : 'rotate(0)'};
 		}
 
 		:nth-child(2) {
@@ -66,7 +68,7 @@ const BarContainer = styled.button`
 
 		:nth-child(3) {
 			transform: ${({ visible }) =>
-				visible ? 'rotate(-45deg)' : 'rotate(0)'};
+				visible ? 'rotate(-48deg)' : 'rotate(0)'};
 		}
 	}
 `;

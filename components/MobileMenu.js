@@ -45,7 +45,7 @@ const StyledMenu = styled.div`
 	width: 80%;
 	height: 100vh;
 	text-align: left;
-	padding: 2rem;
+	padding: 4rem 2rem 2rem 2rem;
 	position: fixed;
 	top: 0;
 	left: 0;
