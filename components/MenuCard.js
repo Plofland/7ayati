@@ -69,6 +69,7 @@ const ImageContainer = styled.div`
 		position: absolute;
 		max-width: 150%;
 		max-height: 150%;
+		z-index: 2;
 	}
 `;
 
