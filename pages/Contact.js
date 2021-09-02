@@ -44,7 +44,7 @@ const ContactSection = styled.div`
 	// border: 1px solid yellow;
 	background-color: gray;
 	${mq({ width: ['90%', '70%'] })};
-	margin: 10% auto;
+	${mq({ margin: ['20vh auto', '10vh auto'] })};
 	display: flex;
 	${mq({ flexDirection: ['column', 'row'] })};
 	align-items: center;

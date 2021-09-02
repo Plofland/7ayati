@@ -55,7 +55,7 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 5% 0;
+	margin: 5vh 0;
 `;
 
 const MenuSection = styled.div`

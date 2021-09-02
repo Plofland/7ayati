@@ -75,6 +75,7 @@ const HoursSection = styled.div`
 	position: relative;
 	${mq({ width: ['90%', '70%'] })};
 	${mq({ margin: ['10% auto', '10% auto'] })};
+	${mq({ margin: ['20vh auto', '10vh auto'] })};
 	background-color: ${colors.cyanBlue};
 
 

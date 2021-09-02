@@ -27,6 +27,11 @@ export default function MobileMenu({visible}) {
 						<p>Contact</p>
 					</StyledNavLink>
 				</Link>
+				<Link href="/" className="" passHref>
+					<StyledNavLink>
+						<p>Home</p>
+					</StyledNavLink>
+				</Link>
 			</StyledMenu>
 		</>
 	);
