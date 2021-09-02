@@ -43,10 +43,10 @@ export default function Contact() {
 const ContactSection = styled.div`
 	// border: 1px solid yellow;
 	background-color: gray;
-	${mq({ width: ['90%', '70%'] })};
-	${mq({ margin: ['20vh auto', '10vh auto'] })};
+	${mq({ width: ['90%', '80%', '70%'] })};
+	${mq({ margin: ['20vh auto', '20vh auto', '10vh auto'] })};
 	display: flex;
-	${mq({ flexDirection: ['column', 'row'] })};
+	${mq({ flexDirection: ['column', 'column', 'row'] })};
 	align-items: center;
 	justify-content: space-between;
 	background-color: ${colors.cyanBlue};
@@ -55,8 +55,8 @@ const ContactSection = styled.div`
 const ContactText = styled.div`
 	// border: 2px solid green;
 	text-align: center;
-	${mq({ width: ['90%', '50%'] })};
-	${mq({ margin: ['2rem 1rem', '2rem 0 2rem 1rem'] })};
+	${mq({ width: ['90%', '80%', '50%'] })};
+	${mq({ margin: ['2rem 1rem', '2rem 1rem', '2rem 0 2rem 1rem'] })};
 
 	p {
 		padding: 1rem;
@@ -88,13 +88,13 @@ const ImageContainer = styled.div`
 	// border: 2px solid white;
 	display: flex;
 	position: relative;
-	${mq({ margin: ['0 1rem 2rem 1rem', '2rem 0'] })};
-	${mq({ width: ['90%', '100%'] })};
+	${mq({ margin: ['0 1rem 2rem 1rem', '2rem 0', '2rem 0'] })};
+	${mq({ width: ['90%', '90%', '100%'] })};
 	align-items: center;
 
 	img {
 		${mq({
-			transform: ['none', 'translate(8%, 0%)']
+			transform: ['none', 'none', 'translate(8%, 0%)']
 		})};
 	}
 

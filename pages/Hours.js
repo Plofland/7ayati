@@ -71,16 +71,15 @@ export default function Hours() {
 const HoursSection = styled.div`
 	// border: 1px solid white;
 	display: flex;
-	${mq({ flexDirection: ['column', 'row'] })};
+	${mq({ flexDirection: ['column', 'column', 'row'] })};
 	position: relative;
-	${mq({ width: ['90%', '70%'] })};
-	${mq({ margin: ['10% auto', '10% auto'] })};
-	${mq({ margin: ['20vh auto', '10vh auto'] })};
+	${mq({ width: ['90%','80%', '70%'] })};
+	${mq({ margin: ['20vh auto', '20vh auto', '10vh auto'] })};
 	background-color: ${colors.cyanBlue};
 
 
 	img {
-		${mq({ position: ['static', 'absolute'] })};
+		${mq({ position: ['static', 'static', 'absolute'] })};
 		right: 2rem;
 		top: -2rem;
 		max-width: 100%;
@@ -89,15 +88,15 @@ const HoursSection = styled.div`
 `;
 
 const HoursText = styled.div`
-	${mq({ width: ['80%', '50%'] })};
-	${mq({ margin: ['2rem auto', '2rem 4rem'] })};
+	${mq({ width: ['80%', '70%', '50%'] })};
+	${mq({ margin: ['2rem auto', '2rem auto', '2rem 4rem'] })};
 `;
 
 const StyledTitle = styled.div`
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	font-weight: bold;
-	${mq({ textAlign: ['center', 'left'] })};
+	${mq({ textAlign: ['center', 'center', 'left'] })};
 `;
 
 const Schedule = styled.div`

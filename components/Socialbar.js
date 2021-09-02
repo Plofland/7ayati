@@ -87,6 +87,7 @@ const SocialContainerVert = styled.div`
 	right: 2rem;
 	margin-top: 2rem;
 	color: ${colors.lightText};
+	color: white;
 	z-index: 99;
 `;
 const SocialContainerHor = styled.div`
@@ -96,6 +97,6 @@ const SocialContainerHor = styled.div`
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	${mq({ width: ['3rem', '2rem'] })};
-	${mq({ margin: ['1rem', '0.5rem'] })};
+	${mq({ width: ['3rem', '2.5rem', '2rem'] })};
+	${mq({ margin: ['1rem', '.75rem', '0.5rem'] })};
 `;

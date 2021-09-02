@@ -42,8 +42,8 @@ const SingleItem = styled.div`
 const CardContainer = styled.div`
 	// border: 1px solid yellow;
 	text-align: center;
-	${mq({ margin: ['1rem', '4rem'] })};
-	${mq({ width: ['150px', '275px'] })};
+	${mq({ margin: ['1rem', '2rem', '4rem'] })};
+	${mq({ width: ['150px', '200px', '275px'] })};
 	display: flex;
 	aspect-ratio: 1/1;
 	background-color: ${colors.cyanBlue};
@@ -53,14 +53,14 @@ const CardInfo = styled.div`
 	// border: 2px solid white;
 	display: flex;
 	flex-direction: column;
-	${mq({ width: ['60%', '50%'] })};
+	${mq({ width: ['60%', '55%', '50%'] })};
 `;
 
 const ImageContainer = styled.div`
 	// border: 2px solid blue;
 	margin: auto 0;
 	position: relative;
-	${mq({ width: ['40%', '50%'] })};
+	${mq({ width: ['40%', '45%', '50%'] })};
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -75,8 +75,8 @@ const ImageContainer = styled.div`
 
 const Title = styled.p`
 	// border: 1px solid white;
-	${mq({ fontSize: ['.7rem', '1.2rem'] })};
-	${mq({ padding: ['.2rem', '1rem'] })};
+	${mq({ fontSize: ['0.7rem', '1rem', '1.2rem'] })};
+	${mq({ padding: ['0.2rem', '0.4rem', '1rem'] })};
 	display: flex;
 	height: 30%;
 	align-items: center;
@@ -85,7 +85,7 @@ const Title = styled.p`
 
 const Text = styled.div`
 	// border: 1px solid limegreen;
-	${mq({ fontSize: ['0.4rem', '0.5rem'] })};
+	${mq({ fontSize: ['0.4rem', '0.45rem', '0.5rem'] })};
 	height: 70%;
 	display: flex;
 	flex-direction: column;
@@ -99,6 +99,12 @@ const Prices = styled.div`
 const Description = styled.div`
 	// border: 2px solid red;
 	height: 100%;
-	${mq({ padding: ['.4rem .5rem', '1rem 0.75rem'] })};
-	${mq({ fontSize: ['0.4rem', '0.7rem'] })};
+	${mq({
+		padding: [
+			'0.4rem 0.5rem',
+			'0.6rem 0.7rem',
+			'1rem 0.75rem'
+		]
+	})};
+	${mq({ fontSize: ['0.4rem', '0.55rem', '0.7rem'] })};
 `;

@@ -64,7 +64,7 @@ const StyledDiv = styled.div`
 
 const TableTitle = styled.p`
 	font-weight: bold;
-	${mq({ fontSize: ['1rem', '1.5rem'] })};
+	${mq({ fontSize: ['1rem', '1.25rem', '1.5rem'] })};
 	margin-bottom: 0.5%;
 `;
 
@@ -79,7 +79,7 @@ const StyledHours = styled.div`
 const HoursTable = styled.div`
 	display: flex;
 	flex-direction: row;
-	${mq({ fontSize: ['.5rem', '1rem'] })};
+	${mq({ fontSize: ['.5rem', '.75rem', '1rem'] })};
 	`;
 	
 	const DayDiv = styled.div`
@@ -93,6 +93,6 @@ const HoursTable = styled.div`
 	const StyledLegal = styled.p`
 	text-align: center;
 	font-size: 12px;
-	${mq({ fontSize: ['.35rem', '.5rem'] })};
+	${mq({ fontSize: ['.35rem', '.45rem', '.5rem'] })};
 	padding: 0.5% 0;
 `;

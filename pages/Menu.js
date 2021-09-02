@@ -67,7 +67,7 @@ const MenuSection = styled.div`
 const SectionTitle = styled.p`
 	// border: 2px solid red;
 	font-family: 'Great Vibes', cursive;
-	${mq({ fontSize: ['2rem', '3rem'] })};
+	${mq({ fontSize: ['2rem', '2rem', '3rem'] })};
 	font-weight: bold;
 `;
 
@@ -75,7 +75,7 @@ const MenuItems = styled.div`
 	// border: 2px solid black;
 	display: flex;
 	flex-direction: row;
-	${mq({ margin: ['0 1rem', '0 4rem'] })};
+	${mq({ margin: ['0 1rem', '0 2rem', '0 4rem'] })};
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 `;
