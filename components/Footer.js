@@ -41,7 +41,7 @@ export default function Footer() {
 						Sat
 						<DayHours>
 							<p>10am-2pm</p>
-							<p>4pm-12</p>
+							<p>4pm-12pm</p>
 						</DayHours>
 					</DayDiv>
 				</HoursTable>

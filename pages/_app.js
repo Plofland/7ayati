@@ -6,10 +6,13 @@ import styled from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 import Socialbar from '../components/Socialbar';
 import { useMediaQuery } from 'react-responsive';
+import Hamburger from '../components/Hamburger';
 
-library.add(fab, faEnvelope);
+library.add(fab, fas, far, faEnvelope);
 
 function MyApp({ Component, pageProps }) {
 	const isMobile = useMediaQuery({
@@ -46,7 +49,7 @@ function MyApp({ Component, pageProps }) {
 					rel="stylesheet"
 				/>
 			</Head>
-			{!isMobile && <Navbar />}
+			{isMobile ? <Hamburger /> : <Navbar />}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />

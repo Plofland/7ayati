@@ -20,7 +20,7 @@
 ### Landing Page
 ### Navbar
 
--   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1)
+-   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/)
 
 ### Socialbar
 
