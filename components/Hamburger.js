@@ -1,20 +1,19 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styled from 'styled-components';
 import { colors } from '../themes';
 
 export default function Hamburger() {
 	return (
 		<BarContainer>
-			<Bars icon={['fas', 'bars']} />
+			<Bars />
+			<Bars />
+			<Bars />
 		</BarContainer>
 	);
 }
 
-const Bars = styled(FontAwesomeIcon)`
+const BarContainer = styled.button`
 	display: flex;
-	// width: 2.5rem;
-	// margin: 1rem;
 	color: ${colors.grayChateau};
     position: absolute;
     top: 2rem;
@@ -36,8 +35,7 @@ const Bars = styled(FontAwesomeIcon)`
   
 `;
 
-const BarContainer = styled.div`
-    border: 1px solid blue;
+const Bars = styled.div`
     width: 2rem;
     height: 0.25rem;
     background: ${colors.lightLavender};

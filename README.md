@@ -21,6 +21,7 @@
 ### Navbar
 
 -   [ ] phone nav bar hamburger menu built --- [use this as a guide](https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/)
+-   [ ] add a small 7ayati logo to the mobile menu
 
 ### Socialbar
 

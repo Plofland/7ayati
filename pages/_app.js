@@ -11,6 +11,8 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import Socialbar from '../components/Socialbar';
 import { useMediaQuery } from 'react-responsive';
 import Hamburger from '../components/Hamburger';
+import MobileMenu from '../components/MobileMenu';
+
 
 library.add(fab, fas, far, faEnvelope);
 
@@ -50,6 +52,7 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			{isMobile ? <Hamburger /> : <Navbar />}
+			{/* {isMobile ? <MobileMenu/> : <Navbar />} */}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
