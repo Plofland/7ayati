@@ -13,8 +13,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const breakpoints = {
 	mobile: '480px',
-	tablet: '768px',
-	desktop: '1024px'
+	tablet: '1024px',
+	desktop: '1200px'
 };
 
 export const mq = facepaint(

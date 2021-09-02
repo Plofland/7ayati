@@ -87,6 +87,7 @@ const ImageContainer = styled.div`
 		${mq({
 			transform: ['none', 'none', 'translate(-25%, -50%)']
 		})};
+		height: 70vh;
 	}
 `;
 
