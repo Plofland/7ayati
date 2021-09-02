@@ -33,8 +33,8 @@ export default function Welcome() {
 const WelcomeSection = styled.div`
 	// border: 1px solid white;
 	${mq({ width: ['90%', '70%'] })};
+	${mq({ margin: ['20vh auto', '10vh auto 30vh auto'] })};
 	height: 70vh;
-	margin: 10vh auto 30vh auto;
 	background-image: url(${hookah.src});
 	background-repeat: no-repeat;
 	background-size: cover;
