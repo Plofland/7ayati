@@ -65,7 +65,7 @@ const StyledFooter = styled.div`
 const TableTitle = styled.p`
 	font-weight: bold;
 	${mq({ fontSize: ['1rem', '1.25rem', '1.5rem'] })};
-	margin-bottom: 0.5%;
+	margin: 1rem;
 `;
 
 const StyledHours = styled.div`
@@ -73,7 +73,6 @@ const StyledHours = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1% 0;
 `;
 
 const HoursTable = styled.div`

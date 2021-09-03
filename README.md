@@ -10,12 +10,14 @@
 ### General Site
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
 - [ ] [Change the pages architecture in _app.js](https://newcurrent.se/blog/nextjs-styled-components) 
+- [ ] (Phone size) add a small 7ayati logo in the upper right
 
 
 ### General Styling
 - [ ] Custom Favicon (maybe use a half heart like the company logo: photoshop out the words)
 - [ ] Make and then use a new light version of the logo to stand out against the dark background
 - [ ] Set up Text component to handle text variants
+- [ ] Change breakpoints to 750, 1040, 1200
 
 ### Landing Page
 ### Navbar
