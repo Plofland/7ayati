@@ -43,7 +43,8 @@ const StyledMenu = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	width: 80%;
-	height: 100vh;
+	height: 100%;
+	// height: 100vh;
 	text-align: left;
 	padding: 4rem 2rem 2rem 2rem;
 	position: fixed;
@@ -51,6 +52,7 @@ const StyledMenu = styled.div`
 	left: 0;
 	transition: transform 0.3s ease-in-out;
 	z-index: 10;
+	opacity: 99%;
 	transform: translateX(-100%);
 	transform: ${({ visible }) => visible ? 'translateX(0)' : 'translateX(-100%)'};
 
@@ -61,7 +63,7 @@ const StyledMenu = styled.div`
 const StyledNavLink = styled.div`
 	font-size: 2rem;
 	text-transform: uppercase;
-	padding: 2rem 0;
+	padding: 1rem 0;
 	font-weight: bold;
 	letter-spacing: 0.5rem;
 	color: ${colors.darkText};

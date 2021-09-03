@@ -78,7 +78,7 @@ const StyledHours = styled.div`
 const HoursTable = styled.div`
 	display: flex;
 	flex-direction: row;
-	${mq({ fontSize: ['.5rem', '.75rem', '1rem'] })};
+	${mq({ fontSize: ['.75rem', '.75rem', '1rem'] })};
 `;
 
 const DayDiv = styled.div`

@@ -76,11 +76,11 @@ const ImageContainer = styled.div`
 const Title = styled.p`
 	// border: 1px solid white;
 	${mq({ fontSize: ['0.7rem', '1rem', '1.2rem'] })};
-	${mq({ padding: ['0.2rem', '0.4rem', '1rem'] })};
+	${mq({ padding: ['1rem 0.5rem 0.4rem 0.5rem', '1rem 0.8rem 0.4rem 0.8rem', '1rem'] })};
 	display: flex;
-	height: 30%;
 	align-items: center;
 	justify-content: center;
+	margin: 0;
 `;
 
 const Text = styled.div`
