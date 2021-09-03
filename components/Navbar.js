@@ -8,12 +8,12 @@ export default function Navbar() {
 	return (
 		<>
 			<StyledNav>
-				<Link href="/menu" as='/menu' className="" passHref>
+				<Link href="/menu" as='/menu' className="">
 					<StyledNavLink>
 						<p>Menu</p>
 					</StyledNavLink>
 				</Link>
-				<Link href="/about" as='/about' className="" passHref>
+				<Link href="/about" as='/about' className="">
 					<StyledNavLink>
 						<p>About</p>
 					</StyledNavLink>
@@ -39,12 +39,12 @@ export default function Navbar() {
 						</svg>
 					</StyledBackground> */}
 				</StyledLogo>
-				<Link href="/hours" as='/hours' className="" passHref>
+				<Link href="/hours" as='/hours' passHref>
 					<StyledNavLink>
 						<p>Hours</p>
 					</StyledNavLink>
 				</Link>
-				<Link href="/contact" as='/contact' className="" passHref>
+				<Link href="/contact" as='/contact' passHref>
 					<StyledNavLink>
 						<p>Contact</p>
 					</StyledNavLink>
