@@ -85,17 +85,22 @@ const SocialContainerVert = styled.div`
 	flex-direction: column;
 	position: absolute;
 	right: 2rem;
-	margin-top: 2rem;
-	color: ${colors.lightText};
 	z-index: 99;
+
+	a{
+		color: ${colors.lightText};
+	}
 `;
 const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
-	color: ${colors.darkText};
+
+	a{
+		color: ${colors.darkText};
+	}
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	${mq({ width: ['3rem', '2rem'] })};
-	${mq({ margin: ['1rem', '0.5rem'] })};
+	width: 2rem;
+	${mq({ margin: ['1rem', '.4rem', '0.5rem'] })};
 `;

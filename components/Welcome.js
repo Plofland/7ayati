@@ -32,8 +32,14 @@ export default function Welcome() {
 
 const WelcomeSection = styled.div`
 	// border: 1px solid white;
-	${mq({ width: ['90%', '70%'] })};
-	${mq({ margin: ['20vh auto', '10vh auto 30vh auto'] })};
+	${mq({ width: ['90%', '80%', '70%'] })};
+	${mq({
+		margin: [
+			'20vh auto',
+			'20vh auto',
+			'10vh auto 30vh auto'
+		]
+	})};
 	height: 70vh;
 	background-image: url(${hookah.src});
 	background-repeat: no-repeat;
@@ -46,10 +52,10 @@ const WelcomeSection = styled.div`
 const WelcomeDiv = styled.div`
 	// border: 1px solid black;
 	display: flex;
-	${mq({ width: ['100%', '45%'] })};
+	${mq({ width: ['100%', '100%', '45%'] })};
 	flex-direction: column;
 	justify-content: center;
-	${mq({ paddingRight: ['0', '4rem'] })};
+	${mq({ paddingRight: ['0', '0', '4rem'] })};
 
 	background-image: linear-gradient(
 		to right,
@@ -63,7 +69,7 @@ const SectionTitle = styled.div`
 	// border: 1px solid orange;
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
-	${mq({ fontSize: ['2rem', '3rem'] })};
+	${mq({ fontSize: ['2rem', '2.5rem', '3rem'] })};
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 2rem;

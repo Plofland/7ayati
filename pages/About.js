@@ -50,13 +50,13 @@ export default function About() {
 }
 
 const AboutSection = styled.div`
-	${mq({ margin: ['20vh auto', '10vh auto'] })};
-	${mq({ width: ['90%', '70%'] })};
+	${mq({ margin: ['20vh auto', '20vh auto', '20vh auto'] })};
+	${mq({ width: ['90%', '80%', '70%'] })};
 `;
 
 const AboutCard = styled.div`
 	display: flex;
-	${mq({ flexDirection: ['column', 'row'] })};
+	${mq({ flexDirection: ['column', 'column', 'row'] })};
 	align-items: center;
 	justify-content: space-between;
 	background-color: ${colors.cyanBlue};
@@ -65,7 +65,7 @@ const AboutCard = styled.div`
 const AboutText = styled.div`
 	// border: 2px solid green;
 	text-align: center;
-	${mq({ width: ['90%', '50%'] })};
+	${mq({ width: ['90%', '70%', '50%'] })};
 	margin: 1rem;
 
 	p {
@@ -80,13 +80,14 @@ const ImageContainer = styled.div`
 	justify-content: center;
 	position: relative;
 	margin: 2rem 1rem;
-	${mq({ width: ['80%', '30%'] })};
+	${mq({ width: ['80%','50%', '30%'] })};
 
 	img {
-		${mq({ position: ['static', 'absolute'] })};
+		${mq({ position: ['static', 'static', 'absolute'] })};
 		${mq({
-			transform: ['none', 'translate(-25%, -50%)']
+			transform: ['none', 'none', 'translate(-25%, -50%)']
 		})};
+		height: 70vh;
 	}
 `;
 

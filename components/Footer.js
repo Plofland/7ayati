@@ -11,7 +11,7 @@ export default function Footer() {
 	});
 
 	return (
-		<StyledDiv>
+		<StyledFooter>
 			<StyledHours>
 				<TableTitle>Hours</TableTitle>
 				<HoursTable>
@@ -51,11 +51,11 @@ export default function Footer() {
 				Legal Stuff will go here 7ayati Café &
 				Hookah Lounge LLC ©7ayati
 			</StyledLegal>
-		</StyledDiv>
+		</StyledFooter>
 	);
 }
 
-const StyledDiv = styled.div`
+const StyledFooter = styled.div`
 	background-color: ${colors.grayChateau};
 	display: flex;
 	flex-direction: column;
@@ -64,8 +64,8 @@ const StyledDiv = styled.div`
 
 const TableTitle = styled.p`
 	font-weight: bold;
-	${mq({ fontSize: ['1rem', '1.5rem'] })};
-	margin-bottom: 0.5%;
+	${mq({ fontSize: ['1rem', '1.25rem', '1.5rem'] })};
+	margin: 1rem;
 `;
 
 const StyledHours = styled.div`
@@ -73,26 +73,25 @@ const StyledHours = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1% 0;
 `;
 
 const HoursTable = styled.div`
 	display: flex;
 	flex-direction: row;
-	${mq({ fontSize: ['.5rem', '1rem'] })};
-	`;
-	
-	const DayDiv = styled.div`
+	${mq({ fontSize: ['.75rem', '.75rem', '1rem'] })};
+`;
+
+const DayDiv = styled.div`
 	margin: 0 1rem;
-	`;
-	
-	const DayHours = styled.p`
+`;
+
+const DayHours = styled.p`
 	flex-direction: column;
-	`;
-	
-	const StyledLegal = styled.p`
+`;
+
+const StyledLegal = styled.p`
 	text-align: center;
 	font-size: 12px;
-	${mq({ fontSize: ['.35rem', '.5rem'] })};
+	${mq({ fontSize: ['.35rem', '.45rem', '.5rem'] })};
 	padding: 0.5% 0;
 `;
