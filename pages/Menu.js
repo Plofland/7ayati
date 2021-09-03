@@ -55,24 +55,21 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin: 5vh 0;
 `;
 
 const MenuSection = styled.div`
-	// border: 2px solid orange;
 	margin-top: 4rem;
 	text-align: center;
 `;
 
 const SectionTitle = styled.p`
-	// border: 2px solid red;
 	font-family: 'Great Vibes', cursive;
 	${mq({ fontSize: ['2rem', '2rem', '3rem'] })};
 	font-weight: bold;
+	margin: 0;
 `;
 
 const MenuItems = styled.div`
-	// border: 2px solid black;
 	display: flex;
 	flex-direction: row;
 	${mq({ margin: ['0 1rem', '0 2rem', '0 4rem'] })};

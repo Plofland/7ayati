@@ -31,7 +31,6 @@ export default function Welcome() {
 }
 
 const WelcomeSection = styled.div`
-	// border: 1px solid white;
 	${mq({ width: ['90%', '80%', '70%'] })};
 	${mq({
 		margin: [
@@ -50,7 +49,6 @@ const WelcomeSection = styled.div`
 `;
 
 const WelcomeDiv = styled.div`
-	// border: 1px solid black;
 	display: flex;
 	${mq({ width: ['100%', '100%', '45%'] })};
 	flex-direction: column;
@@ -66,7 +64,6 @@ const WelcomeDiv = styled.div`
 `;
 
 const SectionTitle = styled.div`
-	// border: 1px solid orange;
 	font-family: 'Great Vibes', cursive;
 	font-size: 3rem;
 	${mq({ fontSize: ['2rem', '2.5rem', '3rem'] })};
@@ -76,7 +73,6 @@ const SectionTitle = styled.div`
 `;
 
 const Text = styled.div`
-	// border: 1px solid green;
 	text-align: center;
 	margin: 0 auto;
 	font-size: 0.8rem;

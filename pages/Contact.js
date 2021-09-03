@@ -41,7 +41,6 @@ export default function Contact() {
 }
 
 const ContactSection = styled.div`
-	// border: 1px solid yellow;
 	${mq({ width: ['90%', '80%', '70%'] })};
 	${mq({
 		margin: ['20vh auto', '20vh auto', '10vh auto']
@@ -54,7 +53,6 @@ const ContactSection = styled.div`
 `;
 
 const ContactText = styled.div`
-	// border: 2px solid green;
 	text-align: center;
 	${mq({ width: ['90%', '80%', '40%'] })};
 	${mq({
@@ -79,7 +77,6 @@ const StyledTitle = styled.div`
 `;
 
 const CTAButton = styled.a`
-	// border: 1px solid #3866a3;
 	display: inline-block;
 	cursor: pointer;
 	background-color: ${colors.lightLavender};
@@ -93,7 +90,6 @@ const CTAButton = styled.a`
 `;
 
 const ImageContainer = styled.div`
-	// border: 2px solid white;
 	display: flex;
 	align-items: center;
 	${mq({

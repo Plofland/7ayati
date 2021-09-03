@@ -71,7 +71,6 @@ export default function Hours() {
 }
 
 const HoursSection = styled.div`
-	// border: 1px solid white;
 	display: flex;
 	${mq({ flexDirection: ['column', 'column', 'row'] })};
 	align-items: center;
@@ -86,7 +85,6 @@ const HoursSection = styled.div`
 const HoursText = styled.div`
 	${mq({ width: ['80%', '70%', '40%'] })};
 	margin: 1rem;
-	// border: 1px solid red;
 `;
 
 const StyledTitle = styled.div`
@@ -120,7 +118,6 @@ const ExpandingEllipse = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	// border: 1px solid white;
 	display: flex;
 	justify-content: center;
 	align-items: center;

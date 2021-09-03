@@ -6,7 +6,7 @@ import logo from '../public/Fayati logo light lilac bg200.jpg';
 export default function MenuCard(props) {
 	const { info } = props;
 	return (
-		<SingleItem>
+		<>
 			<CardContainer>
 				<CardInfo>
 					<Title>{info.name}</Title>
@@ -31,16 +31,11 @@ export default function MenuCard(props) {
 					/>
 				</ImageContainer>
 			</CardContainer>
-		</SingleItem>
+		</>
 	);
 }
 
-const SingleItem = styled.div`
-	// border: 2px solid white;
-`;
-
 const CardContainer = styled.div`
-	// border: 1px solid yellow;
 	text-align: center;
 	${mq({ margin: ['1rem', '2rem', '4rem'] })};
 	${mq({ width: ['150px', '200px', '275px'] })};
@@ -50,14 +45,12 @@ const CardContainer = styled.div`
 `;
 
 const CardInfo = styled.div`
-	// border: 2px solid white;
 	display: flex;
 	flex-direction: column;
 	${mq({ width: ['60%', '55%', '50%'] })};
 `;
 
 const ImageContainer = styled.div`
-	// border: 2px solid blue;
 	margin: auto 0;
 	position: relative;
 	${mq({ width: ['40%', '45%', '50%'] })};
@@ -74,9 +67,14 @@ const ImageContainer = styled.div`
 `;
 
 const Title = styled.p`
-	// border: 1px solid white;
 	${mq({ fontSize: ['0.7rem', '1rem', '1.2rem'] })};
-	${mq({ padding: ['1rem 0.5rem 0.4rem 0.5rem', '1rem 0.8rem 0.4rem 0.8rem', '1rem'] })};
+	${mq({
+		padding: [
+			'1rem 0.5rem 0.4rem 0.5rem',
+			'1rem 0.8rem 0.4rem 0.8rem',
+			'1rem'
+		]
+	})};
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -84,7 +82,6 @@ const Title = styled.p`
 `;
 
 const Text = styled.div`
-	// border: 1px solid limegreen;
 	${mq({ fontSize: ['0.4rem', '0.45rem', '0.5rem'] })};
 	height: 70%;
 	display: flex;
@@ -97,7 +94,6 @@ const Prices = styled.div`
 `;
 
 const Description = styled.div`
-	// border: 2px solid red;
 	height: 100%;
 	${mq({
 		padding: [

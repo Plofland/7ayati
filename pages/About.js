@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import Image from 'next/image';
 import RazPortrait from '../public/RazPortrait.JPG';
 import { colors, mq } from '../themes';
 
@@ -37,7 +36,6 @@ export default function About() {
 						dignissim egestas.
 					</p>
 				</AboutText>
-				{/* <Image src={RazPortrait.src} alt="Owner Portrait" /> */}
 				<ImageContainer>
 					<img
 						src={RazPortrait.src}
@@ -63,7 +61,6 @@ const AboutCard = styled.div`
 `;
 
 const AboutText = styled.div`
-	// border: 2px solid green;
 	text-align: center;
 	${mq({ width: ['90%', '70%', '50%'] })};
 	margin: 1rem;
@@ -75,7 +72,6 @@ const AboutText = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	// border: 2px solid white;
 	display: flex;
 	justify-content: center;
 	position: relative;
