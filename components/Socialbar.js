@@ -101,6 +101,6 @@ const SocialContainerHor = styled.div`
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	width: 2rem;
+	${mq({ width: ['35px', '25px', '25px'] })};
 	${mq({ margin: ['1rem', '.4rem', '0.5rem'] })};
 `;
