@@ -85,7 +85,6 @@ const SocialContainerVert = styled.div`
 	flex-direction: column;
 	position: absolute;
 	right: 2rem;
-	margin-top: 2rem;
 	z-index: 99;
 
 	a{
@@ -95,13 +94,13 @@ const SocialContainerVert = styled.div`
 const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
-	
+
 	a{
 		color: ${colors.darkText};
 	}
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	${mq({ width: ['3rem', '2.5rem', '2rem'] })};
-	${mq({ margin: ['1rem', '.75rem', '0.5rem'] })};
+	width: 2rem;
+	${mq({ margin: ['1rem', '.4rem', '0.5rem'] })};
 `;
