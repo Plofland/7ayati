@@ -1,9 +1,8 @@
 import React, {useState, useRef} from 'react';
 import Head from 'next/head';
-import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from '../utils/hook';
-import { colors, GlobalStyles } from '../themes';
+import { GlobalStyles } from '../themes';
 
 
 //Components
@@ -29,7 +28,6 @@ function MyApp({ Component, pageProps }) {
 
 	const node = useRef(); 
 	useOnClickOutside(node, () => setVisible(false));
-
 
 	return (
 		<>
@@ -78,8 +76,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-// const StyledApp = styled.div`
-// 	font-family: 'Hammersmith One', sans-serif;
-// 	background: ${colors.darkLavender};
-// `;

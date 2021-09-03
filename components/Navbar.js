@@ -58,6 +58,7 @@ const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 0.25rem;
+	width: 100vw;
 `;
 
 const StyledLogo = styled.div`
