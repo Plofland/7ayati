@@ -9,14 +9,10 @@ export default function Navbar() {
 		<>
 			<StyledNav>
 				<Link href="/menu">
-					<StyledNavLink>
-						<p>Menu</p>
-					</StyledNavLink>
+					<StyledNavLink>Menu</StyledNavLink>
 				</Link>
 				<Link href="/about">
-					<StyledNavLink>
-						<p>About</p>
-					</StyledNavLink>
+					<StyledNavLink>About</StyledNavLink>
 				</Link>
 				<StyledLogo>
 					<Link href="/">
@@ -40,15 +36,10 @@ export default function Navbar() {
 					</StyledBackground> */}
 				</StyledLogo>
 				<Link href="/hours">
-					<StyledNavLink>
-						<p>Hours</p>
-					</StyledNavLink>
-
+					<StyledNavLink>Hours</StyledNavLink>
 				</Link>
 				<Link href="/contact">
-					<StyledNavLink>
-						<p>Contact</p>
-					</StyledNavLink>
+					<StyledNavLink>Contact</StyledNavLink>
 				</Link>
 			</StyledNav>
 		</>
