@@ -1,9 +1,9 @@
-import React, {useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import Head from 'next/head';
+import Router from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from '../utils/hook';
 import { GlobalStyles } from '../themes';
-
 
 //Components
 import Navbar from '../components/Navbar';
@@ -24,10 +24,22 @@ function App({ Component, pageProps }) {
 		query: '(max-width: 480px)'
 	});
 
-	const [ visible, setVisible ] = useState(false);
+	const [visible, setVisible] = useState(false);
 
-	const node = useRef(); 
+	const node = useRef();
 	useOnClickOutside(node, () => setVisible(false));
+
+	Router.events.on('routeChangeComplete', () => {
+		if (process.env.NODE_ENV !== 'production') {
+			const els = document.querySelectorAll(
+				'link[href*="/_next/static/css/styles.chunk.css"]'
+			);
+			const timestamp = new Date().valueOf();
+			els[0].href =
+				'/_next/static/css/styles.chunk.css?v=' +
+				timestamp;
+		}
+	});
 
 	return (
 		<>
@@ -62,8 +74,14 @@ function App({ Component, pageProps }) {
 			<GlobalStyles />
 			{isMobile ? (
 				<div ref={node}>
-					<Hamburger visible={visible} setVisible={setVisible}/>
-					<MobileMenu visible={visible} setVisible={setVisible}/>
+					<Hamburger
+						visible={visible}
+						setVisible={setVisible}
+					/>
+					<MobileMenu
+						visible={visible}
+						setVisible={setVisible}
+					/>
 				</div>
 			) : (
 				<Navbar />
