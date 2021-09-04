@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
 import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from '../utils/hook';
 import { GlobalStyles } from '../themes';
@@ -28,18 +27,6 @@ function App({ Component, pageProps }) {
 
 	const node = useRef();
 	useOnClickOutside(node, () => setVisible(false));
-
-	Router.events.on('routeChangeComplete', () => {
-		if (process.env.NODE_ENV !== 'production') {
-			const els = document.querySelectorAll(
-				'link[href*="/_next/static/css/styles.chunk.css"]'
-			);
-			const timestamp = new Date().valueOf();
-			els[0].href =
-				'/_next/static/css/styles.chunk.css?v=' +
-				timestamp;
-		}
-	});
 
 	return (
 		<>

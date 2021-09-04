@@ -12,6 +12,7 @@ export default function Socialbar(props) {
 			<a
 				href="mailto: ploflan@gmail.com"
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['far', 'envelope']} />
 			</a>
@@ -20,24 +21,28 @@ export default function Socialbar(props) {
 					'https://www.instagram.com/7ayatilounge/'
 				}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'instagram']} />
 			</a>
 			<a
 				href={'https://twitter.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'twitter']} />
 			</a>
 			<a
 				href={'https://facebook.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'facebook']} />
 			</a>
 			<a
 				href={'https://pinterest.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'pinterest']} />
 			</a>
@@ -47,6 +52,7 @@ export default function Socialbar(props) {
 			<a
 				href="mailto: ploflan@gmail.com"
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['far', 'envelope']} />
 			</a>
@@ -55,24 +61,28 @@ export default function Socialbar(props) {
 					'https://www.instagram.com/7ayatilounge/'
 				}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'instagram']} />
 			</a>
 			<a
 				href={'https://twitter.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'twitter']} />
 			</a>
 			<a
 				href={'https://facebook.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'facebook']} />
 			</a>
 			<a
 				href={'https://pinterest.com/'}
 				target="_blank"
+				rel="noreferrer"
 			>
 				<SocialIcon icon={['fab', 'pinterest']} />
 			</a>
@@ -87,7 +97,7 @@ const SocialContainerVert = styled.div`
 	right: 2rem;
 	z-index: 99;
 
-	a{
+	a {
 		color: ${colors.lightText};
 	}
 `;
@@ -95,7 +105,7 @@ const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
 
-	a{
+	a {
 		color: ${colors.darkText};
 	}
 `;
