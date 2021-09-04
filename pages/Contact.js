@@ -35,6 +35,7 @@ export default function Contact() {
 				<Image
 					src={largeParty}
 					alt="People outside at a picnic table in a park"
+					className="contactImg"
 				/>
 			</ImageContainer>
 		</ContactSection>
@@ -98,7 +99,8 @@ const ImageContainer = styled.div`
 	})};
 	${mq({ width: ['90%', '80%', '80%'] })};
 
-	Image {
+	.contactImg {
+		overflow: visible;
 		width: 100%;
 		${mq({
 			transform: [

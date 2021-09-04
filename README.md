@@ -11,6 +11,8 @@
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
 - [ ] [Change the pages architecture in _app.js](https://newcurrent.se/blog/nextjs-styled-components) 
 - [ ] (Phone size) add a small 7ayati logo in the upper right
+- [ ] convert all img tags to nextJS Image components
+- [ ] blur placeholders for all nextJS Images
 
 
 ### General Styling
