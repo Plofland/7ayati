@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import { colors, mq } from '../themes';
 import largeParty from '../public/largeParty.jpeg';
@@ -15,9 +16,9 @@ export default function Contact() {
 					Get in Touch
 				</CTAButton>
 				<p>
-					Whether it's a birthday or just a party
-					of friends we can accommodate groups up
-					to 20. <br />
+					Whether it&apos;s a birthday or just a
+					party of friends we can accommodate
+					groups up to 20. <br />
 					Just drop us a line.
 				</p>
 				<p>
@@ -31,8 +32,8 @@ export default function Contact() {
 				</p>
 			</ContactText>
 			<ImageContainer>
-				<img
-					src={largeParty.src}
+				<Image
+					src={largeParty}
 					alt="People outside at a picnic table in a park"
 				/>
 			</ImageContainer>
@@ -97,10 +98,14 @@ const ImageContainer = styled.div`
 	})};
 	${mq({ width: ['90%', '80%', '80%'] })};
 
-	img {
+	Image {
 		width: 100%;
 		${mq({
-			transform: ['none', 'none', 'translate(10%, 0%) scale(1.1)']
+			transform: [
+				'none',
+				'none',
+				'translate(10%, 0%) scale(1.1)'
+			]
 		})};
 	}
 `;
