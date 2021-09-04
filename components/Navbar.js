@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/Fayati logo no bg 200px.png';
 import { colors } from '../themes';
@@ -8,18 +9,20 @@ export default function Navbar() {
 	return (
 		<>
 			<StyledNav>
-				<Link href="/menu">
+				<Link href="/menu" passHref>
 					<StyledNavLink>Menu</StyledNavLink>
 				</Link>
-				<Link href="/about">
+				<Link href="/about" passHref>
 					<StyledNavLink>About</StyledNavLink>
 				</Link>
 				<StyledLogo>
 					<Link href="/">
 						<a>
-							<img
+							<Image
 								src={hayatiLogo.src}
 								alt="7ayati company logo"
+								height="120px"
+								width="120px"
 							/>
 						</a>
 					</Link>
@@ -35,10 +38,10 @@ export default function Navbar() {
 						</svg>
 					</StyledBackground> */}
 				</StyledLogo>
-				<Link href="/hours">
+				<Link href="/hours" passHref>
 					<StyledNavLink>Hours</StyledNavLink>
 				</Link>
-				<Link href="/contact">
+				<Link href="/contact" passHref>
 					<StyledNavLink>Contact</StyledNavLink>
 				</Link>
 			</StyledNav>
