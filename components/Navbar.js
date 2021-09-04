@@ -8,18 +8,18 @@ export default function Navbar() {
 	return (
 		<>
 			<StyledNav>
-				<Link href="/menu" as='/menu' className="">
+				<Link href="/menu">
 					<StyledNavLink>
 						<p>Menu</p>
 					</StyledNavLink>
 				</Link>
-				<Link href="/about" as='/about' className="">
+				<Link href="/about">
 					<StyledNavLink>
 						<p>About</p>
 					</StyledNavLink>
 				</Link>
 				<StyledLogo>
-					<Link href="/" className="">
+					<Link href="/">
 						<a>
 							<img
 								src={hayatiLogo.src}
@@ -39,12 +39,13 @@ export default function Navbar() {
 						</svg>
 					</StyledBackground> */}
 				</StyledLogo>
-				<Link href="/hours" as='/hours' passHref>
+				<Link href="/hours">
 					<StyledNavLink>
 						<p>Hours</p>
 					</StyledNavLink>
+
 				</Link>
-				<Link href="/contact" as='/contact' passHref>
+				<Link href="/contact">
 					<StyledNavLink>
 						<p>Contact</p>
 					</StyledNavLink>
@@ -91,7 +92,7 @@ const StyledLogo = styled.div`
 // 	}
 // `;
 
-const StyledNavLink = styled.div`
+const StyledNavLink = styled.a`
 	font-family: 'Great Vibes', cursive;
 	color: ${colors.lightText};
 	padding: 1rem;
