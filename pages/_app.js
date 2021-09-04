@@ -19,7 +19,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 library.add(fab, faEnvelope);
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
 	const isMobile = useMediaQuery({
 		query: '(max-width: 480px)'
 	});
@@ -75,4 +75,4 @@ function MyApp({ Component, pageProps }) {
 	);
 }
 
-export default MyApp;
+export default App;
