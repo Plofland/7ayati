@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/dist/client/image';
 import { colors, mq } from '../themes';
 import coals from '../public/latbok-n4au.jpeg';
 
@@ -61,10 +62,14 @@ export default function Hours() {
 				</Schedule>
 			</HoursText>
 			<ImageContainer>
-				<img
-					src={coals.src}
-					alt="red hot glowing coal cubes"
-				/>
+				<Wrapper>
+					<Image
+						src={coals}
+						alt="red hot glowing coal cubes"
+						layout="fill"
+						objectFit="cover"
+					/>
+				</Wrapper>
 			</ImageContainer>
 		</HoursSection>
 	);
@@ -123,12 +128,13 @@ const ImageContainer = styled.div`
 	align-items: center;
 	position: relative;
 	margin: 2rem 1rem;
-	${mq({ width: ['80%','50%', '50%'] })};
+	${mq({ width: ['90%', '70%', '50%'] })};
+`;
 
-	img {
-		${mq({
-			position: ['static', 'static', 'absolute']
-		})};
-		height: 70vh;
-	}
+const Wrapper = styled.div`
+	${mq({
+		position: ['static', 'static', 'absolute']
+	})};
+	height: 500px;
+	width: 400px;
 `;

@@ -32,11 +32,15 @@ export default function Contact() {
 				</p>
 			</ContactText>
 			<ImageContainer>
-				<Image
-					src={largeParty}
-					alt="People outside at a picnic table in a park"
-					className="contactImg"
-				/>
+				<Wrapper>
+					<Image
+						src={largeParty}
+						alt="People outside at a picnic table in a park"
+						height={540}
+						width={810}
+						
+					/>
+				</Wrapper>
 			</ImageContainer>
 		</ContactSection>
 	);
@@ -61,7 +65,7 @@ const ContactText = styled.div`
 		margin: [
 			'2rem 1rem',
 			'2rem 1rem',
-			'6rem 0 6rem 1rem'
+			'4rem 0 4rem 1rem'
 		]
 	})};
 
@@ -98,16 +102,14 @@ const ImageContainer = styled.div`
 		margin: ['0 1rem 2rem 1rem', '2rem 0', '2rem 0']
 	})};
 	${mq({ width: ['90%', '80%', '80%'] })};
+`;
 
-	.contactImg {
-		overflow: visible;
-		width: 100%;
-		${mq({
-			transform: [
-				'none',
-				'none',
-				'translate(10%, 0%) scale(1.1)'
-			]
-		})};
-	}
+const Wrapper = styled.div`
+	${mq({
+		transform: [
+			'none',
+			'none',
+			'translate(10%, 0%) scale(1.1)'
+		]
+	})};
 `;

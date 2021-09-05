@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/dist/client/image';
 import styled from 'styled-components';
 import hookah from '../public/hookahFlip.png';
 import { colors, mq } from '../themes';
@@ -26,6 +27,15 @@ export default function Welcome() {
 					</p>
 				</Text>
 			</WelcomeDiv>
+			<ImageContainer>
+				<Image
+					src={hookah}
+					alt="Hookah on table next to an iced drink"
+					layout="fill"
+					objectFit="cover"
+					objectPosition="bottom"
+				/>
+			</ImageContainer>
 		</WelcomeSection>
 	);
 }
@@ -40,12 +50,8 @@ const WelcomeSection = styled.div`
 		]
 	})};
 	height: 70vh;
-	background-image: url(${hookah.src});
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
 	display: flex;
+	position: relative;
 `;
 
 const WelcomeDiv = styled.div`
@@ -80,4 +86,8 @@ const Text = styled.div`
 	p {
 		padding: 1rem;
 	}
+`;
+
+const ImageContainer = styled.div`
+	z-index: -2;
 `;
