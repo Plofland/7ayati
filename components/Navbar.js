@@ -9,10 +9,10 @@ export default function Navbar() {
 	return (
 		<>
 			<StyledNav>
-				<Link href="/menu" passHref>
+				<Link href="/menu">
 					<StyledNavLink>Menu</StyledNavLink>
 				</Link>
-				<Link href="/about" passHref>
+				<Link href="/about">
 					<StyledNavLink>About</StyledNavLink>
 				</Link>
 				<StyledLogo>
@@ -38,10 +38,10 @@ export default function Navbar() {
 						</svg>
 					</StyledBackground> */}
 				</StyledLogo>
-				<Link href="/hours" passHref>
+				<Link href="/hours">
 					<StyledNavLink>Hours</StyledNavLink>
 				</Link>
-				<Link href="/contact" passHref>
+				<Link href="/contact">
 					<StyledNavLink>Contact</StyledNavLink>
 				</Link>
 			</StyledNav>
@@ -94,6 +94,8 @@ const StyledNavLink = styled.a`
 	font-size: 2rem;
 	cursor: pointer;
 	transition: 0.2s ease-in-out;
+	text-decoration: none;
+
 	&:hover {
 		transform: translate(0, 1rem);
 	}
