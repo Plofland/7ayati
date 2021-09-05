@@ -135,7 +135,6 @@ const Wrapper = styled.div`
 	${mq({
 		position: ['static', 'static', 'absolute']
 	})};
-	border: 1px solid red;
 	height: 500px;
 	width: 400px;
 `;

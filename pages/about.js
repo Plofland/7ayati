@@ -1,5 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
+import Head from 'next/head';
+import Image from 'next/dist/client/image';
 import styled from 'styled-components';
 import RazPortrait from '../public/RazPortrait.JPG';
 import { colors, mq } from '../themes';
@@ -55,10 +56,14 @@ export default function About() {
 							</p>
 						</AboutText>
 						<ImageContainer>
-							<img
-								src={RazPortrait.src}
-								alt="Owner Portrait"
-							/>
+							<Wrapper>
+								<Image
+									src={RazPortrait}
+									alt="Owner Portrait"
+									layout="fill"
+									objectFit="scale-down"
+								/>
+							</Wrapper>
 						</ImageContainer>
 					</AboutCard>
 				</AboutSection>
@@ -98,21 +103,18 @@ const ImageContainer = styled.div`
 	justify-content: center;
 	position: relative;
 	margin: 2rem 1rem;
-	${mq({ width: ['80%', '50%', '30%'] })};
+	${mq({ width: ['80%', '60%', '30%'] })};
+`;
 
-	img {
-		${mq({
-			position: ['static', 'static', 'absolute']
-		})};
-		${mq({
-			transform: [
-				'none',
-				'none',
-				'translate(-25%, -50%)'
-			]
-		})};
-		height: 70vh;
-	}
+const Wrapper = styled.div`
+	${mq({
+		position: ['static', 'static', 'absolute']
+	})};
+	${mq({
+		transform: ['none', 'none', 'translate(-25%, -50%)']
+	})};
+	height: 450px;
+	width: 350px;
 `;
 
 const StyledTitle = styled.div`
