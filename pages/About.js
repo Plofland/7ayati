@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
@@ -6,50 +7,64 @@ import { colors, mq } from '../themes';
 
 export default function About() {
 	return (
-		<main>
-			<AboutSection>
-				<AboutCard>
-					<AboutText>
-						<StyledTitle>About Us</StyledTitle>
-						<p>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit.
-							Aliquam ac pulvinar vitae ipsum,
-							lectus nisi.
-						</p>
-						<p>
-							Consectetur dui interdum congue
-							vitae ultrices. Lobortis vel id
-							facilisi netus. Potenti
-							habitasse id tellus est ,
-							aenean. Laoreet ac etiam
-							pharetra faucibus integer purus
-							duis elit at. Convallis semper
-							quis aliquam dis leo
-							pellentesque aliquet orci arcu.
-							Maecenas lobortis proin commodo
-							quis magna arcu senectus non
-							tincidunt. A nisl netus
-							pellentesque a consequat lacus
-							et.
-						</p>
-						<p>
-							Purus felis semper consequat
-							lectus orci, sed. Quis elit ac
-							sagittis ipsum purus mauris duis
-							tincidunt in. At luctus volutpat
-							nisl, dignissim egestas.
-						</p>
-					</AboutText>
-					<ImageContainer>
-						<img
-							src={RazPortrait.src}
-							alt="Owner Portrait"
-						/>
-					</ImageContainer>
-				</AboutCard>
-			</AboutSection>
-		</main>
+		<>
+			<Head>
+				<title>7ayati</title>
+				<meta
+					name="description"
+					content="Ohio Cafe and Hookah Lounge"
+				/>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
+			<main>
+				<AboutSection>
+					<AboutCard>
+						<AboutText>
+							<StyledTitle>
+								About Us
+							</StyledTitle>
+							<p>
+								Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit.
+								Aliquam ac pulvinar vitae
+								ipsum, lectus nisi.
+							</p>
+							<p>
+								Consectetur dui interdum
+								congue vitae ultrices.
+								Lobortis vel id facilisi
+								netus. Potenti habitasse id
+								tellus est , aenean. Laoreet
+								ac etiam pharetra faucibus
+								integer purus duis elit at.
+								Convallis semper quis
+								aliquam dis leo pellentesque
+								aliquet orci arcu. Maecenas
+								lobortis proin commodo quis
+								magna arcu senectus non
+								tincidunt. A nisl netus
+								pellentesque a consequat
+								lacus et.
+							</p>
+							<p>
+								Purus felis semper consequat
+								lectus orci, sed. Quis elit
+								ac sagittis ipsum purus
+								mauris duis tincidunt in. At
+								luctus volutpat nisl,
+								dignissim egestas.
+							</p>
+						</AboutText>
+						<ImageContainer>
+							<img
+								src={RazPortrait.src}
+								alt="Owner Portrait"
+							/>
+						</ImageContainer>
+					</AboutCard>
+				</AboutSection>
+			</main>
+		</>
 	);
 }
 
