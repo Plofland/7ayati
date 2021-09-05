@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/Layout';
 import RazPortrait from '../public/RazPortrait.JPG';
 import { colors, mq } from '../themes';
 
