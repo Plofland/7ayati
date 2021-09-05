@@ -26,41 +26,8 @@ export default function Navbar() {
 							/>
 						</a>
 					</Link>
-					{/* <StyledBackground>
-						<svg
-							id="triangle"
-							viewBox="0 0 100 100"
-						>
-							<polygon
-								fill={colors.grayChateau}
-								points="50 15, 100 100, 0 100,"
-							/>
-						</svg>
-					</StyledBackground> */}
 				</StyledLogo>
-				<StyledLogo>
-					<Link href="/about">
-						<a>
-							<Image
-								src={hayatiLogo.src}
-								alt="7ayati company logo"
-								height="120px"
-								width="120px"
-							/>
-						</a>
-					</Link>
-					{/* <StyledBackground>
-						<svg
-							id="triangle"
-							viewBox="0 0 100 100"
-						>
-							<polygon
-								fill={colors.grayChateau}
-								points="50 15, 100 100, 0 100,"
-							/>
-						</svg>
-					</StyledBackground> */}
-				</StyledLogo>
+
 				<Link href="/hours">
 					<StyledNavLink>Hours</StyledNavLink>
 				</Link>
@@ -123,3 +90,17 @@ const StyledNavLink = styled.a`
 		transform: translate(0, 1rem);
 	}
 `;
+
+{
+	/* <StyledBackground>
+		<svg
+			id="triangle"
+			viewBox="0 0 100 100"
+		>
+			<polygon
+				fill={colors.grayChateau}
+				points="50 15, 100 100, 0 100,"
+			/>
+		</svg>
+	</StyledBackground> */
+}

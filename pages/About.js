@@ -6,7 +6,7 @@ import { colors, mq } from '../themes';
 
 export default function About() {
 	return (
-		<Layout>
+		<main>
 			<AboutSection>
 				<AboutCard>
 					<AboutText>
@@ -49,7 +49,7 @@ export default function About() {
 					</ImageContainer>
 				</AboutCard>
 			</AboutSection>
-		</Layout>
+		</main>
 	);
 }
 
