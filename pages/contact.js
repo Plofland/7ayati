@@ -36,8 +36,8 @@ export default function Contact() {
 					<Image
 						src={largeParty}
 						alt="People outside at a picnic table in a park"
-						height={600}
-						width={900}
+						height={540}
+						width={810}
 						
 					/>
 				</Wrapper>
@@ -65,7 +65,7 @@ const ContactText = styled.div`
 		margin: [
 			'2rem 1rem',
 			'2rem 1rem',
-			'6rem 0 6rem 1rem'
+			'4rem 0 4rem 1rem'
 		]
 	})};
 
