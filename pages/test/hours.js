@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, mq } from '../themes';
+import { colors, mq } from '../../themes';
 import coals from '../public/latbok-n4au.jpeg';
 
 export default function Hours() {

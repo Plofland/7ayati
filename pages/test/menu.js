@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import MenuCard from '../components/MenuCard';
-import { menuData } from '../MenuItems';
-import { breakpoints, mq } from '../themes';
+import MenuCard from '../../components/MenuCard';
+import { menuData } from '../../MenuItems';
+import { breakpoints, mq } from '../../themes';
 import { useMediaQuery } from 'react-responsive';
 
 export default function Menu() {
