@@ -1,7 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import { colors, mq } from '../themes/index';
-import logo from '../public/Fayati logo light lilac bg200.jpg';
+import logo from '../public/Fayati logo light lilac bg500.jpg';
 
 export default function MenuCard(props) {
 	const { info } = props;
@@ -25,10 +26,15 @@ export default function MenuCard(props) {
 					</Text>
 				</CardInfo>
 				<ImageContainer>
-					<img
-						src={logo.src}
-						alt="Menu item picture"
-					/>
+					<Wrapper>
+						<Image
+							src={logo}
+							alt="Menu item picture"
+							width={200}
+							height={200}
+							layout="fixed"
+						/>
+					</Wrapper>
 				</ImageContainer>
 			</CardContainer>
 		</>
@@ -57,13 +63,11 @@ const ImageContainer = styled.div`
 	height: 100%;
 	display: flex;
 	align-items: center;
+	border: 1px solid white;
+`;
 
-	img {
-		position: absolute;
-		max-width: 150%;
-		max-height: 150%;
-		z-index: 2;
-	}
+const Wrapper = styled.div`
+	position: absolute;
 `;
 
 const Title = styled.p`
