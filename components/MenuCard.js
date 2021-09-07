@@ -30,9 +30,8 @@ export default function MenuCard(props) {
 						<Image
 							src={logo}
 							alt="Menu item picture"
-							width={200}
-							height={200}
-							layout="fixed"
+							layout="fill"
+							objectFit="contain"
 						/>
 					</Wrapper>
 				</ImageContainer>
@@ -57,17 +56,18 @@ const CardInfo = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	margin: auto 0;
 	position: relative;
 	${mq({ width: ['40%', '45%', '50%'] })};
-	height: 100%;
 	display: flex;
 	align-items: center;
-	border: 1px solid white;
+	width: 50%;
 `;
 
 const Wrapper = styled.div`
 	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
 `;
 
 const Title = styled.p`
@@ -83,13 +83,14 @@ const Title = styled.p`
 	align-items: center;
 	justify-content: center;
 	margin: 0;
+	height: 30%;
 `;
 
 const Text = styled.div`
-	${mq({ fontSize: ['0.4rem', '0.45rem', '0.5rem'] })};
-	height: 70%;
+	${mq({ fontSize: ['0.4rem', '0.5rem', '0.6rem'] })};
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 `;
 
 const Prices = styled.div`
@@ -98,7 +99,7 @@ const Prices = styled.div`
 `;
 
 const Description = styled.div`
-	height: 100%;
+	flex-grow: 1;
 	${mq({
 		padding: [
 			'0.4rem 0.5rem',
