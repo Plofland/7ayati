@@ -1,7 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 import { colors, mq } from '../themes/index';
-import logo from '../public/Fayati logo light lilac bg200.jpg';
+import logo from '../public/Fayati logo light lilac bg500.jpg';
 
 export default function MenuCard(props) {
 	const { info } = props;
@@ -25,10 +26,14 @@ export default function MenuCard(props) {
 					</Text>
 				</CardInfo>
 				<ImageContainer>
-					<img
-						src={logo.src}
-						alt="Menu item picture"
-					/>
+					<Wrapper>
+						<Image
+							src={logo}
+							alt="Menu item picture"
+							layout="fill"
+							objectFit="contain"
+						/>
+					</Wrapper>
 				</ImageContainer>
 			</CardContainer>
 		</>
@@ -51,19 +56,18 @@ const CardInfo = styled.div`
 `;
 
 const ImageContainer = styled.div`
-	margin: auto 0;
 	position: relative;
 	${mq({ width: ['40%', '45%', '50%'] })};
-	height: 100%;
 	display: flex;
 	align-items: center;
+	width: 50%;
+`;
 
-	img {
-		position: absolute;
-		max-width: 150%;
-		max-height: 150%;
-		z-index: 2;
-	}
+const Wrapper = styled.div`
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
 `;
 
 const Title = styled.p`
@@ -79,13 +83,14 @@ const Title = styled.p`
 	align-items: center;
 	justify-content: center;
 	margin: 0;
+	height: 30%;
 `;
 
 const Text = styled.div`
-	${mq({ fontSize: ['0.4rem', '0.45rem', '0.5rem'] })};
-	height: 70%;
+	${mq({ fontSize: ['0.4rem', '0.5rem', '0.6rem'] })};
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 `;
 
 const Prices = styled.div`
@@ -94,7 +99,7 @@ const Prices = styled.div`
 `;
 
 const Description = styled.div`
-	height: 100%;
+	flex-grow: 1;
 	${mq({
 		padding: [
 			'0.4rem 0.5rem',
