@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Socialbar from '../components/Socialbar';
 import Hamburger from '../components/Hamburger';
 import MobileMenu from '../components/MobileMenu';
+import MobileLogo from '../components/MobileLogo';
 
 //Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -72,7 +73,9 @@ function App({ Component, pageProps }) {
 				</div>
 			) : (
 				<Navbar />
-			)}
+				)}
+				
+			{isMobile && <MobileLogo />}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />

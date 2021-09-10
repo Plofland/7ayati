@@ -9,10 +9,10 @@ export default function Navbar() {
 	return (
 		<>
 			<StyledNav>
-				<Link href="/menu">
+				<Link href="/menu" passHref>
 					<StyledNavLink>Menu</StyledNavLink>
 				</Link>
-				<Link href="/about">
+				<Link href="/about" passHref>
 					<StyledNavLink>About</StyledNavLink>
 				</Link>
 				<StyledLogo>
@@ -28,10 +28,10 @@ export default function Navbar() {
 					</Link>
 				</StyledLogo>
 
-				<Link href="/hours">
+				<Link href="/hours" passHref>
 					<StyledNavLink>Hours</StyledNavLink>
 				</Link>
-				<Link href="/contact">
+				<Link href="/contact" passHref>
 					<StyledNavLink>Contact</StyledNavLink>
 				</Link>
 			</StyledNav>
