@@ -49,7 +49,7 @@ export default function Contact() {
 const ContactSection = styled.div`
 	${mq({ width: ['90%', '80%', '70%'] })};
 	${mq({
-		margin: ['20vh auto', '20vh auto', '10vh auto']
+		margin: ['10vh auto', '20vh auto', '10vh auto']
 	})};
 	display: flex;
 	${mq({ flexDirection: ['column', 'column', 'row'] })};

@@ -74,7 +74,7 @@ export default function About() {
 
 const AboutSection = styled.div`
 	${mq({
-		margin: ['20vh auto', '20vh auto', '20vh auto']
+		margin: ['10vh auto', '20vh auto', '20vh auto']
 	})};
 	${mq({ width: ['90%', '80%', '70%'] })};
 `;

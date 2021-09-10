@@ -65,9 +65,8 @@ const ImageContainer = styled.div`
 
 const Wrapper = styled.div`
 	position: absolute;
-	width: 200px;
-	height: 200px;
-	border: 1px solid red;
+	${mq({ width: ['100px', '150px', '200px'] })};
+	aspect-ratio: 1/1;
 `;
 
 const Title = styled.p`

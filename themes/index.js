@@ -28,15 +28,16 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
   *, *::after, *::before {
     box-sizing: border-box;
   }
+
   body {
 	display: flex;
 	background: ${colors.darkLavender};
 	color: ${colors.lightText};
 	font-family: 'Hammersmith One', sans-serif;
-	height: 100vh;
     text-rendering: optimizeLegibility;
   }
 `;
