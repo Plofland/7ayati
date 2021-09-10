@@ -24,29 +24,20 @@ export const colors = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-*{
-	margin: 0;
+  html, body {
+    margin: 0;
     padding: 0;
-	box-sizing: border-box;
-	
-}
-//   html, body {
-//     margin: 0;
-//     padding: 0;
-//   }
-//   *, *::after, *::before {
-//     box-sizing: border-box;
-//   }
-// html {
-// 	width:100%;
-// }
+  }
+
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
   body {
 	display: flex;
 	background: ${colors.darkLavender};
 	color: ${colors.lightText};
 	font-family: 'Hammersmith One', sans-serif;
-	// height: fit-content;
-	// width: fit-content;
     text-rendering: optimizeLegibility;
   }
 `;

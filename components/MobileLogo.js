@@ -24,14 +24,13 @@ const StyledContainer = styled.div`
 	width: 100%;
 	height: 6rem;
 	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 `;
 
 const Wrapper = styled.div`
-	margin-right: 2rem;
+	right: 2rem;
+    top: 1rem;
 	height: 4rem;
 	aspect-ratio: 1/1;
 	position: relative;
-	border: 2px solid blue;
 `;
