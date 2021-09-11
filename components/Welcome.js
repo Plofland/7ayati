@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/dist/client/image';
 import styled from 'styled-components';
-import hookah from '../public/hookahFlip.png';
+import hookah from '../public/hookahFlipCompressed.png';
 import { colors, mq } from '../themes';
 
 export default function Welcome() {

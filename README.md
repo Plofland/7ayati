@@ -28,6 +28,7 @@
 -   [ ] (mobile) add a simple animation when the nav links are clicked
 
 ### Socialbar
+- [ ] change anchor tags to next.js Links
 
 ### Menu
 - [ ] add a little note about buying a hookah
