@@ -9,11 +9,12 @@ export default function Socialbar(props) {
 	//todo get rid of my email when I get the 7ayati company email
 	return vertical ? (
 		<SocialContainerVert>
-			<Link
-				href="mailto: ploflan@gmail.com"
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href="mailto: ploflan@gmail.com">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Icon for email"
+				>
 					<SocialIcon
 						icon={['far', 'envelope']}
 					/>
@@ -23,37 +24,43 @@ export default function Socialbar(props) {
 				href={
 					'https://www.instagram.com/7ayatilounge/'
 				}
-				rel="noreferrer"
 			>
-				<a target="_blank">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Instagram"
+				>
 					<SocialIcon
 						icon={['fab', 'instagram']}
 					/>
 				</a>
 			</Link>
-			<Link
-				href={'https://twitter.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://twitter.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Twitter"
+				>
 					<SocialIcon icon={['fab', 'twitter']} />
 				</a>
 			</Link>
-			<Link
-				href={'https://facebook.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://facebook.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Facebook"
+				>
 					<SocialIcon
 						icon={['fab', 'facebook']}
 					/>
 				</a>
 			</Link>
-			<Link
-				href={'https://pinterest.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://pinterest.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Pinterest"
+				>
 					<SocialIcon
 						icon={['fab', 'pinterest']}
 					/>
@@ -62,11 +69,12 @@ export default function Socialbar(props) {
 		</SocialContainerVert>
 	) : (
 		<SocialContainerHor>
-			<Link
-				href="mailto: ploflan@gmail.com"
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href="mailto: ploflan@gmail.com">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Icon for email"
+				>
 					<SocialIcon
 						icon={['far', 'envelope']}
 					/>
@@ -76,37 +84,43 @@ export default function Socialbar(props) {
 				href={
 					'https://www.instagram.com/7ayatilounge/'
 				}
-				rel="noreferrer"
 			>
-				<a target="_blank">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Instagram"
+				>
 					<SocialIcon
 						icon={['fab', 'instagram']}
 					/>
 				</a>
 			</Link>
-			<Link
-				href={'https://twitter.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://twitter.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Twitter"
+				>
 					<SocialIcon icon={['fab', 'twitter']} />
 				</a>
 			</Link>
-			<Link
-				href={'https://facebook.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://facebook.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Facebook"
+				>
 					<SocialIcon
 						icon={['fab', 'facebook']}
 					/>
 				</a>
 			</Link>
-			<Link
-				href={'https://pinterest.com/'}
-				rel="noreferrer"
-			>
-				<a target="_blank">
+			<Link href={'https://pinterest.com/'}>
+				<a
+					target="_blank"
+					rel="noreferrer"
+					alt="Social Icon for Pinterest"
+				>
 					<SocialIcon
 						icon={['fab', 'pinterest']}
 					/>
