@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 import { colors, mq } from '../themes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,83 +9,109 @@ export default function Socialbar(props) {
 	//todo get rid of my email when I get the 7ayati company email
 	return vertical ? (
 		<SocialContainerVert>
-			<a
+			<Link
 				href="mailto: ploflan@gmail.com"
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['far', 'envelope']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['far', 'envelope']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={
 					'https://www.instagram.com/7ayatilounge/'
 				}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'instagram']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'instagram']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={'https://twitter.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'twitter']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon icon={['fab', 'twitter']} />
+				</a>
+			</Link>
+			<Link
 				href={'https://facebook.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'facebook']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'facebook']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={'https://pinterest.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'pinterest']} />
-			</a>
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'pinterest']}
+					/>
+				</a>
+			</Link>
 		</SocialContainerVert>
 	) : (
 		<SocialContainerHor>
-			<a
+			<Link
 				href="mailto: ploflan@gmail.com"
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['far', 'envelope']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['far', 'envelope']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={
 					'https://www.instagram.com/7ayatilounge/'
 				}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'instagram']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'instagram']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={'https://twitter.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'twitter']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon icon={['fab', 'twitter']} />
+				</a>
+			</Link>
+			<Link
 				href={'https://facebook.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'facebook']} />
-			</a>
-			<a
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'facebook']}
+					/>
+				</a>
+			</Link>
+			<Link
 				href={'https://pinterest.com/'}
-				target="_blank"
 				rel="noreferrer"
 			>
-				<SocialIcon icon={['fab', 'pinterest']} />
-			</a>
+				<a target="_blank">
+					<SocialIcon
+						icon={['fab', 'pinterest']}
+					/>
+				</a>
+			</Link>
 		</SocialContainerHor>
 	);
 }
@@ -101,6 +127,7 @@ const SocialContainerVert = styled.div`
 		color: ${colors.lightText};
 	}
 `;
+
 const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
@@ -111,6 +138,6 @@ const SocialContainerHor = styled.div`
 `;
 
 const SocialIcon = styled(FontAwesomeIcon)`
-	${mq({ width: ['25px', '25px', '30px'] })};
+	${mq({ width: ['35px', '25px', '30px'] })};
 	${mq({ margin: ['1rem', '.4rem', '0.5rem'] })};
 `;

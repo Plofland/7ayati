@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/dist/client/image';
 import { colors, mq } from '../themes';

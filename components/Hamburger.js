@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../themes';
 
@@ -7,7 +6,7 @@ export default function Hamburger({ visible, setVisible }) {
 		<BarContainer
 			visible={visible}
 			onClick={() => setVisible(!visible)}
-			aria-label="Open Drawer"
+			aria-label="Toggle Drawer"
 		>
 			<div />
 			<div />

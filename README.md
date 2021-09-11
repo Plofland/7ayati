@@ -28,7 +28,7 @@
 -   [ ] (mobile) add a simple animation when the nav links are clicked
 
 ### Socialbar
-- [ ] change anchor tags to next.js Links
+- [x] change anchor tags to next.js Links
 
 ### Menu
 - [ ] add a little note about buying a hookah
@@ -40,6 +40,7 @@
 
 
 ### Hours
+- [ ] hours table in the Footer does not show when the user is on the hours page
 
 ### Contact
 - [ ] give the call to action button a call to action color

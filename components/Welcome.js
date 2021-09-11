@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/dist/client/image';
 import styled from 'styled-components';
 import hookah from '../public/hookahFlipCompressed.png';
