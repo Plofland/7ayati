@@ -21,7 +21,7 @@ library.add(fab, faEnvelope);
 
 function App({ Component, pageProps }) {
 	const isMobile = useMediaQuery({
-		query: '(max-width: 480px)'
+		query: '(max-width: 750px)'
 	});
 
 	const [visible, setVisible] = useState(false);

@@ -2,7 +2,7 @@ import facepaint from 'facepaint';
 import { createGlobalStyle } from 'styled-components';
 
 export const breakpoints = {
-	mobile: '480px',
+	mobile: '750px',
 	tablet: '1024px',
 	desktop: '1200px'
 };
