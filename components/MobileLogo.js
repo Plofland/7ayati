@@ -29,7 +29,7 @@ const StyledContainer = styled.div`
 
 const Wrapper = styled.div`
 	right: 2rem;
-    top: 1rem;
+    top: 1.5rem;
 	height: 4rem;
 	aspect-ratio: 1/1;
 	position: relative;
