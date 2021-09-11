@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import {popularData} from '../MenuItems'
 import MenuCard from './MenuCard';

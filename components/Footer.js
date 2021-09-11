@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { breakpoints, colors, mq } from '../themes';
 import Socialbar from './Socialbar';
