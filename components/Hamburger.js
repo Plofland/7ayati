@@ -18,7 +18,6 @@ export default function Hamburger({ visible, setVisible }) {
 const BarContainer = styled.button`
 	display: flex;
 	color: ${colors.grayChateau};
-	// position: absolute;
 	top: 2rem;
 	left: 2rem;
 	display: flex;
@@ -30,7 +29,7 @@ const BarContainer = styled.button`
 	border: none;
 	position: fixed;
 	transform: ${({ visible }) =>
-		visible ? 'translateX(60vw)' : 'translateX(0)'};
+		visible ? 'translateX(16rem)' : 'translateX(0)'};
 	transition: 0.3s ease-in-out;
 	cursor: pointer;
 	padding: 0;
