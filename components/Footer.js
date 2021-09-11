@@ -5,6 +5,7 @@ import Socialbar from './Socialbar';
 import { useMediaQuery } from 'react-responsive';
 
 export default function Footer() {
+	
 	const isMobile = useMediaQuery({
 		maxWidth: breakpoints.mobile
 	});
@@ -15,19 +16,34 @@ export default function Footer() {
 				<TableTitle>Hours</TableTitle>
 				<HoursTable>
 					<DayDiv>
-						Sun <DayHours>10-2pm</DayHours>
+						Sun
+						<DayHours>
+							<p>10-2pm</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Mon <DayHours>Closed</DayHours>
+						Mon
+						<DayHours>
+							<p>Closed</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Tues <DayHours>4-11pm</DayHours>
+						Tues
+						<DayHours>
+							<p>4-11pm</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Wed <DayHours>4-11pm</DayHours>
+						Wed
+						<DayHours>
+							<p>4-11pm</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
-						Thur <DayHours>4-11pm</DayHours>
+						Thur
+						<DayHours>
+							<p>4-11pm</p>
+						</DayHours>
 					</DayDiv>
 					<DayDiv>
 						Fri
@@ -77,15 +93,19 @@ const StyledHours = styled.div`
 const HoursTable = styled.div`
 	display: flex;
 	flex-direction: row;
-	${mq({ fontSize: ['.75rem', '.75rem', '1rem'] })};
 `;
 
 const DayDiv = styled.div`
 	margin: 0 1rem;
+	${mq({ fontSize: ['.8rem', '1rem', '1.2rem'] })};
 `;
 
-const DayHours = styled.p`
+const DayHours = styled.div`
 	flex-direction: column;
+
+	p {
+		${mq({ fontSize: ['.65rem', '.75rem', '.8rem'] })};
+	}
 `;
 
 const StyledLegal = styled.p`
