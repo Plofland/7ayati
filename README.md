@@ -46,3 +46,4 @@
 - [ ] give the call to action button a call to action color
 
 ### Footer
+- [ ] change text color to dark text
