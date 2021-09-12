@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
-import hayatiLogo from '../public/Fayati logo no bg 200px.png';
+import hayatiLogo from '../public/Fayati logo no bg 200px white text.png';
 import { colors } from '../themes';
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
 					<Link href="/">
 						<a>
 							<Image
-								src={hayatiLogo.src}
+								src={hayatiLogo}
 								alt="7ayati company logo"
 								height="120px"
 								width="120px"
@@ -33,6 +33,7 @@ export default function Navbar() {
 				<Link href="/contact" passHref>
 					<StyledNavLink>Contact</StyledNavLink>
 				</Link>
+				
 			</StyledNav>
 		</>
 	);
@@ -41,7 +42,7 @@ export default function Navbar() {
 const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 0.25rem;
+	// margin-top: 0.25rem;
 	width: 100vw;
 `;
 
@@ -62,7 +63,7 @@ const StyledLogo = styled.div`
 // 	transform: rotate(180deg);
 // 	// display: flex;
 // 	// justify-content: center;
-
+	
 // 	svg {
 // 		// position: relative;
 // 		// display: block;
@@ -70,7 +71,7 @@ const StyledLogo = styled.div`
 // 		// width: 10%;
 // 		height: 220px;
 // 		// margin: 0 auto;
-// 		// margin-left: 43vw;
+// 		margin-left: 43vw;
 // 		// margin-right: 51%;
 // 	}
 // `;

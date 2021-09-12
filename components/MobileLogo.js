@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../public/Fayati logo no bg 200px.png';
+import logo from '../public/Fayati logo no bg 200px white text.png';
 import styled from 'styled-components';
 
 export default function MobileLogo() {

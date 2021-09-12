@@ -5,7 +5,6 @@ import Socialbar from './Socialbar';
 import { useMediaQuery } from 'react-responsive';
 
 export default function Footer() {
-	
 	const isMobile = useMediaQuery({
 		maxWidth: breakpoints.mobile
 	});
@@ -88,6 +87,7 @@ const StyledHours = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	color: ${colors.darkText};
 `;
 
 const HoursTable = styled.div`
@@ -113,4 +113,5 @@ const StyledLegal = styled.p`
 	font-size: 12px;
 	${mq({ fontSize: ['.35rem', '.45rem', '.5rem'] })};
 	padding: 0.5% 0;
+	color: ${colors.darkText};
 `;
