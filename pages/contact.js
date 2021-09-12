@@ -1,9 +1,14 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 import { colors, mq } from '../themes';
 import largeParty from '../public/largeParty.jpeg';
 
 export default function Contact() {
+	const isMobile = useMediaQuery({
+		query: '(max-width: 750px)'
+	});
+
 	return (
 		<ContactSection>
 			<ContactText>
@@ -35,9 +40,9 @@ export default function Contact() {
 					<Image
 						src={largeParty}
 						alt="People outside at a picnic table in a park"
-						height={540}
-						width={810}
-						
+						quality={isMobile ? 10 : 75}
+						layout="fill"
+						objectFit="scale-down"
 					/>
 				</Wrapper>
 			</ImageContainer>
@@ -46,7 +51,7 @@ export default function Contact() {
 }
 
 const ContactSection = styled.div`
-	${mq({ width: ['90%', '80%', '70%'] })};
+	${mq({ maxWidth: ['90%', '80%', '75%'] })};
 	${mq({
 		margin: ['10vh auto', '20vh auto', '10vh auto']
 	})};
@@ -64,7 +69,7 @@ const ContactText = styled.div`
 		margin: [
 			'2rem 1rem',
 			'2rem 1rem',
-			'4rem 0 4rem 1rem'
+			'2rem 0 2rem 2rem'
 		]
 	})};
 
@@ -104,11 +109,14 @@ const ImageContainer = styled.div`
 `;
 
 const Wrapper = styled.div`
+	position: relative;
+	width: 100%;
+	${mq({ height: ['220px', '400px', '460px'] })};
 	${mq({
 		transform: [
 			'none',
 			'none',
-			'translate(10%, 0%) scale(1.1)'
+			'translate(8%, 0%)'
 		]
 	})};
 `;
