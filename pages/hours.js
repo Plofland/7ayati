@@ -93,6 +93,8 @@ const HoursText = styled.div`
 
 const StyledTitle = styled.div`
 	font-family: 'Great Vibes', cursive;
+	display: flex;
+	justify-content: center;
 	font-size: 3rem;
 	font-weight: bold;
 	${mq({ textAlign: ['center', 'center', 'left'] })};

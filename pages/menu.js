@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import MenuCard from '../components/MenuCard';
 import { menuData } from '../MenuItems';
-import { breakpoints, mq } from '../themes';
+import { colors, breakpoints, mq } from '../themes';
 import { useMediaQuery } from 'react-responsive';
 
 export default function Menu() {
@@ -12,7 +12,9 @@ export default function Menu() {
 	return (
 		<StyledMenu>
 			<MenuSection>
-				<SectionTitle>Drinks</SectionTitle>
+				<SectionTitle>
+					<span>Drinks</span>
+				</SectionTitle>
 				<MenuItems>
 					{menuData &&
 						menuData.drinks.map((foodItem) => (
@@ -24,7 +26,9 @@ export default function Menu() {
 				</MenuItems>
 			</MenuSection>
 			<MenuSection>
-				<SectionTitle>Food</SectionTitle>
+				<SectionTitle>
+					<span>Food</span>
+				</SectionTitle>
 				<MenuItems>
 					{menuData &&
 						menuData.food.map((foodItem) => (
@@ -36,7 +40,9 @@ export default function Menu() {
 				</MenuItems>
 			</MenuSection>
 			<MenuSection>
-				<SectionTitle>Shisha</SectionTitle>
+				<SectionTitle>
+					<span>Shisha</span>
+				</SectionTitle>
 				<MenuItems>
 					{menuData &&
 						menuData.hookah.map((foodItem) => (
@@ -66,6 +72,44 @@ const SectionTitle = styled.p`
 	${mq({ fontSize: ['2rem', '2rem', '3rem'] })};
 	font-weight: bold;
 	margin: 0;
+	
+	span {
+		// display: inline-block;
+		position: relative;
+	}
+	
+	span:before, span:after {
+		content: "";
+		position: absolute;
+		// height: 12px;
+		top: 50%;
+		${mq({ width: ['200px', '400px', '600px'] })}
+		border-radius: 2px;
+	}
+	
+	span:before {
+		background: linear-gradient(
+			to bottom left,
+			${colors.lightText},
+			${colors.darkLavender} 30%
+		   );
+		right: 100%;
+		height: 12px;
+		margin-right: 1rem;
+	}
+
+	span:after {
+		background: linear-gradient(
+			to bottom right,
+			${colors.lightText},
+			${colors.darkLavender} 30%
+			);
+		left: 100%;
+		height: 12px;
+		margin-left: 1rem;
+	}
+
+  }
 `;
 
 const MenuItems = styled.div`
