@@ -24,20 +24,20 @@ export const colors = {
 };
 
 export const GlobalStyles = createGlobalStyle`
+	*, *::after, *::before {
+	box-sizing: border-box;
+	}
+
   html, body {
     margin: 0;
     padding: 0;
   }
 
-  *, *::after, *::before {
-    box-sizing: border-box;
-  }
-
   body {
-	display: flex;
 	background: ${colors.darkLavender};
 	color: ${colors.lightText};
 	font-family: 'Hammersmith One', sans-serif;
     text-rendering: optimizeLegibility;
   }
+  
 `;
