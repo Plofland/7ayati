@@ -32,7 +32,12 @@ function App({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<link
+				<title>7ayati</title>
+				<meta
+					name="description"
+					content="Ohio Cafe and Hookah Lounge"
+				/>
+				{/* <link
 					rel="preconnect"
 					href="https://fonts.googleapis.com"
 				/>
@@ -57,8 +62,11 @@ function App({ Component, pageProps }) {
 				<link
 					href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
 					rel="stylesheet"
+				/> */}
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1"
 				/>
-				{/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
 			</Head>
 			<GlobalStyles />
 			{isMobile ? (
@@ -74,8 +82,8 @@ function App({ Component, pageProps }) {
 				</div>
 			) : (
 				<Navbar />
-				)}
-				
+			)}
+
 			{isMobile && <MobileLogo />}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
