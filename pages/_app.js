@@ -58,6 +58,7 @@ function App({ Component, pageProps }) {
 					href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
 					rel="stylesheet"
 				/>
+				{/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
 			</Head>
 			<GlobalStyles />
 			{isMobile ? (

@@ -70,7 +70,6 @@ const MenuSection = styled.div`
 const SectionTitle = styled.p`
 	font-family: 'Great Vibes', cursive;
 	${mq({ fontSize: ['2rem', '2rem', '3rem'] })};
-	// border:1px solid white;
 	font-weight: bold;
 	margin: 0;
 	
@@ -82,30 +81,33 @@ const SectionTitle = styled.p`
 	span:before, span:after {
 		content: "";
 		position: absolute;
-		height: 12px;
+		// height: 12px;
 		top: 50%;
-		// width: 600px;
-		${mq({width: ['200px', '400px', '600px']})}
+		${mq({ width: ['200px', '400px', '600px'] })}
 		border-radius: 2px;
 	}
+	
 	span:before {
-		 background: linear-gradient(
+		background: linear-gradient(
 			to bottom left,
 			${colors.lightText},
 			${colors.darkLavender} 30%
 		   );
 		right: 100%;
+		height: 12px;
 		margin-right: 1rem;
-	  }
-	  span:after {
+	}
+
+	span:after {
 		background: linear-gradient(
 			to bottom right,
 			${colors.lightText},
 			${colors.darkLavender} 30%
-		  );
+			);
 		left: 100%;
+		height: 12px;
 		margin-left: 1rem;
-	  }
+	}
 
   }
 `;
