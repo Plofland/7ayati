@@ -94,6 +94,10 @@ const Text = styled.div`
 const Prices = styled.div`
 	display: flex;
 	justify-content: center;
+
+	p {
+		margin: 0
+	}
 `;
 
 const Description = styled.div`

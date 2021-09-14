@@ -4,7 +4,6 @@ import { menuData } from '../MenuItems';
 import { colors, mq } from '../themes';
 
 export default function Menu() {
-
 	return (
 		<StyledMenu>
 			<MenuSection>
@@ -56,6 +55,7 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
+	${mq({ marginTop: ['0', '2rem', '4rem'] })};
 `;
 
 const MenuSection = styled.div`
@@ -70,7 +70,6 @@ const SectionTitle = styled.p`
 	margin: 0;
 	
 	span {
-		// display: inline-block;
 		position: relative;
 	}
 	
@@ -79,7 +78,7 @@ const SectionTitle = styled.p`
 		position: absolute;
 		height: 12px;
 		top: 50%;
-		${mq({ width: ['25vw', '400px', '600px'] })}
+		${mq({ width: ['25vw', '30vw', '600px'] })}
 		border-radius: 2px;
 	}
 	
@@ -90,7 +89,6 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 		   );
 		right: 100%;
-		// height: 12px;
 		margin-right: 1rem;
 	}
 
@@ -101,7 +99,6 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 			);
 		left: 100%;
-		// height: 12px;
 		margin-left: 1rem;
 	}
 

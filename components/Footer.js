@@ -96,7 +96,7 @@ const HoursTable = styled.div`
 `;
 
 const DayDiv = styled.div`
-	margin: 0 1rem;
+	${mq({ margin: ['0 .3rem', '0 1rem', '0 1.2rem'] })};
 	${mq({ fontSize: ['.8rem', '1rem', '1.2rem'] })};
 `;
 

@@ -17,6 +17,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['far', 'envelope']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -32,6 +33,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'instagram']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -41,7 +43,10 @@ export default function Socialbar(props) {
 					rel="noreferrer"
 					alt="Social Icon for Twitter"
 				>
-					<SocialIcon icon={['fab', 'twitter']} />
+					<SocialIcon
+						icon={['fab', 'twitter']}
+						size="lg"
+					/>
 				</a>
 			</Link>
 			<Link href={'https://facebook.com/'}>
@@ -52,6 +57,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'facebook']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -63,6 +69,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'pinterest']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -77,6 +84,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['far', 'envelope']}
+						size="2x"
 					/>
 				</a>
 			</Link>
@@ -92,6 +100,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'instagram']}
+						size="2x"
 					/>
 				</a>
 			</Link>
@@ -101,7 +110,10 @@ export default function Socialbar(props) {
 					rel="noreferrer"
 					alt="Social Icon for Twitter"
 				>
-					<SocialIcon icon={['fab', 'twitter']} />
+					<SocialIcon
+						icon={['fab', 'twitter']}
+						size="2x"
+					/>
 				</a>
 			</Link>
 			<Link href={'https://facebook.com/'}>
@@ -112,6 +124,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'facebook']}
+						size="2x"
 					/>
 				</a>
 			</Link>
@@ -123,6 +136,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'pinterest']}
+						size="2x"
 					/>
 				</a>
 			</Link>
@@ -132,6 +146,7 @@ export default function Socialbar(props) {
 
 const SocialContainerVert = styled.div`
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	position: absolute;
 	right: 2rem;
@@ -139,6 +154,8 @@ const SocialContainerVert = styled.div`
 
 	a {
 		color: ${colors.lightText};
+		display: flex;
+		justify-content: center;
 	}
 `;
 
@@ -153,5 +170,5 @@ const SocialContainerHor = styled.div`
 
 const SocialIcon = styled(FontAwesomeIcon)`
 	${mq({ width: ['35px', '25px', '30px'] })};
-	${mq({ margin: ['1rem', '.4rem', '0.5rem'] })};
+	${mq({ margin: ['.5rem', '.4rem', '0.5rem'] })};
 `;
