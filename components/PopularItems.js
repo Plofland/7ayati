@@ -42,7 +42,7 @@ const SectionTitle = styled.p`
 		position: absolute;
 		height: 12px;
 		top: 50%;
-		${mq({ width: ['25vw', '400px', '600px'] })}
+		${mq({ width: ['25vw', '30vw', '600px'] })}
 		border-radius: 2px;
 	}
 
