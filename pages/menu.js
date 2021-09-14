@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 import MenuCard from '../components/MenuCard';
 import { menuData } from '../MenuItems';
-import { colors, breakpoints, mq } from '../themes';
-import { useMediaQuery } from 'react-responsive';
+import { colors, mq } from '../themes';
 
 export default function Menu() {
-	const isMobile = useMediaQuery({
-		maxWidth: breakpoints.mobile
-	});
 
 	return (
 		<StyledMenu>
@@ -81,9 +77,9 @@ const SectionTitle = styled.p`
 	span:before, span:after {
 		content: "";
 		position: absolute;
-		// height: 12px;
+		height: 12px;
 		top: 50%;
-		${mq({ width: ['200px', '400px', '600px'] })}
+		${mq({ width: ['25vw', '400px', '600px'] })}
 		border-radius: 2px;
 	}
 	
@@ -94,7 +90,7 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 		   );
 		right: 100%;
-		height: 12px;
+		// height: 12px;
 		margin-right: 1rem;
 	}
 
@@ -105,7 +101,7 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 			);
 		left: 100%;
-		height: 12px;
+		// height: 12px;
 		margin-left: 1rem;
 	}
 
