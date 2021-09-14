@@ -92,8 +92,12 @@ const Text = styled.div`
 `;
 
 const Prices = styled.div`
-	display: flex;
+	// display: flex;
 	justify-content: center;
+
+	p {
+		margin-bottom: 0;
+	}
 `;
 
 const Description = styled.div`
