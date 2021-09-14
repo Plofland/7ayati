@@ -70,7 +70,6 @@ const SectionTitle = styled.p`
 	margin: 0;
 	
 	span {
-		// display: inline-block;
 		position: relative;
 	}
 	
@@ -90,7 +89,6 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 		   );
 		right: 100%;
-		// height: 12px;
 		margin-right: 1rem;
 	}
 
@@ -101,7 +99,6 @@ const SectionTitle = styled.p`
 			${colors.darkLavender} 30%
 			);
 		left: 100%;
-		// height: 12px;
 		margin-left: 1rem;
 	}
 
