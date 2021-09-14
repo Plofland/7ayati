@@ -4,7 +4,6 @@ import { menuData } from '../MenuItems';
 import { colors, mq } from '../themes';
 
 export default function Menu() {
-
 	return (
 		<StyledMenu>
 			<MenuSection>
@@ -56,6 +55,7 @@ export default function Menu() {
 const StyledMenu = styled.div`
 	display: flex;
 	flex-direction: column;
+	${mq({ marginTop: ['0', '2rem', '4rem'] })};
 `;
 
 const MenuSection = styled.div`

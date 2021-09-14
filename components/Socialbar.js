@@ -17,6 +17,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['far', 'envelope']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -32,6 +33,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'instagram']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -41,7 +43,10 @@ export default function Socialbar(props) {
 					rel="noreferrer"
 					alt="Social Icon for Twitter"
 				>
-					<SocialIcon icon={['fab', 'twitter']} />
+					<SocialIcon
+						icon={['fab', 'twitter']}
+						size="lg"
+					/>
 				</a>
 			</Link>
 			<Link href={'https://facebook.com/'}>
@@ -52,6 +57,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'facebook']}
+						size="lg"
 					/>
 				</a>
 			</Link>
@@ -63,6 +69,7 @@ export default function Socialbar(props) {
 				>
 					<SocialIcon
 						icon={['fab', 'pinterest']}
+						size="lg"
 					/>
 				</a>
 			</Link>
