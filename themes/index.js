@@ -39,5 +39,4 @@ export const GlobalStyles = createGlobalStyle`
 	font-family: 'Hammersmith One', sans-serif;
     text-rendering: optimizeLegibility;
   }
-  
 `;

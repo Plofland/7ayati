@@ -58,7 +58,7 @@ function App({ Component, pageProps }) {
 				<Navbar />
 			)}
 
-			{/* {isMobile && <MobileLogo />} */}
+			{isMobile && <MobileLogo />}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
