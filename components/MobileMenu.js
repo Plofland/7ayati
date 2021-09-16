@@ -85,7 +85,7 @@ const StyledMenu = styled.div`
 const StyledNavLink = styled.div`
 	font-size: 2rem;
 	text-transform: uppercase;
-	padding: 1rem 0;
+	padding: .5rem 0;
 	font-weight: bold;
 	letter-spacing: 0.5rem;
 	color: ${colors.darkText};
