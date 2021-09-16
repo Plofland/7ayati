@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import { colors, mq } from '../themes/index';
-import logo from '../public/Fayati logo light lilac bg500.jpg';
+import logo from '../public/images/FayatiLogoLightLilacBG500.jpg';
 
 export default function MenuCard(props) {
 	const { info } = props;

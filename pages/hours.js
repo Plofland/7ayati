@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/dist/client/image';
 import { colors, mq } from '../themes';
-import coals from '../public/latbok-n4au.jpeg';
+import coals from '../public/images/latbok-n4au.jpeg';
 
 export default function Hours() {
 	return (

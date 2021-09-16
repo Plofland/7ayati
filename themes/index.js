@@ -24,9 +24,10 @@ export const colors = {
 };
 
 export const GlobalStyles = createGlobalStyle`
-	*, *::after, *::before {
+
+  *, *::after, *::before {
 	box-sizing: border-box;
-	}
+  }
 
   html, body {
     margin: 0;
@@ -36,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
 	background: ${colors.darkLavender};
 	color: ${colors.lightText};
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Great Vibes', 'Hammersmith One', -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
   }
 `;

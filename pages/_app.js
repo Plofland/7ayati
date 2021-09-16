@@ -2,7 +2,8 @@ import { useState, useRef } from 'react';
 import Head from 'next/head';
 import { useMediaQuery } from 'react-responsive';
 import { useOnClickOutside } from '../utils/hook';
-import { GlobalStyles } from '../themes';
+import { GlobalStyles } from '../themes/index';
+import { GlobalFonts } from '../public/fonts/fonts';
 
 //Components
 import Navbar from '../components/Navbar';
@@ -42,6 +43,7 @@ function App({ Component, pageProps }) {
 					content="width=device-width, initial-scale=1"
 				/>
 			</Head>
+			<GlobalFonts />
 			<GlobalStyles />
 			{isMobile ? (
 				<div ref={node}>
