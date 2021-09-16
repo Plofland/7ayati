@@ -55,12 +55,11 @@ function App({ Component, pageProps }) {
 						visible={visible}
 						setVisible={setVisible}
 					/>
+					<MobileLogo />
 				</div>
 			) : (
 				<Navbar />
 			)}
-
-			{isMobile && <MobileLogo />}
 			{!isMobile && <Socialbar vertical={true} />}
 			<Component {...pageProps} />
 			<Footer />
