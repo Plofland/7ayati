@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import greatVibes from './GreatVibes-Regular-webfont.woff'
+import hammersmith from './HammersmithOne-Regular.woff'
 
 export const GlobalFonts = createGlobalStyle`
 
@@ -13,7 +14,7 @@ export const GlobalFonts = createGlobalStyle`
 	@font-face {
 		font-family: 'Hammersmith One';
 		src: local('Hammersmith One Regular'),
-			url('./HammersmithOne-Regular.woff') format('woff');
+			url(${hammersmith}) format('woff');
 		font-style: normal;
 		font-weight: normal;
 	}

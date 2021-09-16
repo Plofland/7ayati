@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
 	background: ${colors.darkLavender};
 	color: ${colors.lightText};
-	font-family: 'Great Vibes', 'Hammersmith One', -apple-system, sans-serif;
+	font-family: 'Hammersmith One', -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
   }
 `;
