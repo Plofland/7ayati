@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/dist/client/image';
 import styled from 'styled-components';
-import RazPortrait from '../public/RazPortrait.JPG';
+import RazPortrait from '../public/images/RazPortrait.JPG';
 import { colors, mq } from '../themes';
 
 export default function About() {

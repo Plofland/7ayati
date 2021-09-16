@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import { colors, mq } from '../themes';
-import largeParty from '../public/largeParty.jpeg';
+import largeParty from '../public/images/largeParty.jpeg';
 
 export default function Contact() {
 	const isMobile = useMediaQuery({

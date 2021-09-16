@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
-import hayatiLogo from '../public/Fayati logo no bg 200px white text.png';
+import hayatiLogo from '../public/images/FayatiLogoNoBG200pxWhiteText.png';
 import { colors } from '../themes';
 
 export default function Navbar() {
@@ -50,6 +50,24 @@ const StyledLogo = styled.div`
 	}
 `;
 
+
+const StyledNavLink = styled.a`
+	font-family: 'Great Vibes', 'Hammersmith', -apple-system;
+	color: ${colors.lightText};
+	padding: 1rem;
+	font-weight: bold;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		transform: translate(0, 1rem);
+	}
+`;
+
+
+
 // const StyledBackground = styled.div`
 // 	position: absolute;
 // 	top: 0;
@@ -74,20 +92,6 @@ const StyledLogo = styled.div`
 // 	}
 // `;
 
-const StyledNavLink = styled.a`
-	font-family: 'Great Vibes', cursive;
-	color: ${colors.lightText};
-	padding: 1rem;
-	font-weight: bold;
-	font-size: 2rem;
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
-	text-decoration: none;
-
-	&:hover {
-		transform: translate(0, 1rem);
-	}
-`;
 
 {
 	/* <StyledBackground>
