@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/images/FayatiLogoNoBG200pxWhiteText.png';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 
 export default function Navbar() {
 	return (
@@ -42,6 +42,8 @@ export default function Navbar() {
 const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
+	${mq({ marginTop: ['0', '1rem', '0'] })};
+
 `;
 
 const StyledLogo = styled.div`
@@ -65,44 +67,3 @@ const StyledNavLink = styled.a`
 		transform: translate(0, 1rem);
 	}
 `;
-
-
-
-// const StyledBackground = styled.div`
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	overflow: hidden;
-// 	// line-height: 0;
-// 	z-index: -1;
-// 	transform: rotate(180deg);
-// 	// display: flex;
-// 	// justify-content: center;
-	
-// 	svg {
-// 		// position: relative;
-// 		// display: block;
-// 		// width: calc(100% + 1.3px);
-// 		// width: 10%;
-// 		height: 220px;
-// 		// margin: 0 auto;
-// 		margin-left: 43vw;
-// 		// margin-right: 51%;
-// 	}
-// `;
-
-
-{
-	/* <StyledBackground>
-		<svg
-			id="triangle"
-			viewBox="0 0 100 100"
-		>
-			<polygon
-				fill={colors.grayChateau}
-				points="50 15, 100 100, 0 100,"
-			/>
-		</svg>
-	</StyledBackground> */
-}

@@ -51,9 +51,9 @@ export default function Contact() {
 }
 
 const ContactSection = styled.div`
-	${mq({ maxWidth: ['90%', '80%', '75%'] })};
+	${mq({ maxWidth: ['90%', '70%', '75%'] })};
 	${mq({
-		margin: ['10vh auto', '20vh auto', '10vh auto']
+		margin: ['10vh auto', '5vh auto', '10vh auto']
 	})};
 	display: flex;
 	${mq({ flexDirection: ['column', 'column', 'row'] })};

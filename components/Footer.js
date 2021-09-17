@@ -74,6 +74,7 @@ const StyledFooter = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	${mq({ marginTop: ['0', '7vh', '0'] })};
 `;
 
 const TableTitle = styled.p`

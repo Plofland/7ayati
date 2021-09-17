@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const breakpoints = {
 	mobile: '750px',
-	tablet: '1024px',
+	tablet: '1025px',
 	desktop: '1200px'
 };
 
@@ -39,5 +39,9 @@ export const GlobalStyles = createGlobalStyle`
 	color: ${colors.lightText};
 	font-family: 'Hammersmith One', -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
+  }
+  
+  #__next {
+    flex: 1;
   }
 `;
