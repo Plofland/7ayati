@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
 				<Head></Head>
 				<body>
 					{/* Empty script tag as chrome bug fix, see https://stackoverflow.com/a/42969608/943337 */}
-                    <script> </script>
+                    <script>0</script>
 					<Main />
 					<NextScript />
 				</body>
