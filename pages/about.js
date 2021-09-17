@@ -7,66 +7,52 @@ import { colors, mq } from '../themes';
 export default function About() {
 	return (
 		<>
-			<Head>
-				<title>7ayati</title>
-				<meta
-					name="description"
-					content="Ohio Cafe and Hookah Lounge"
-				/>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<main>
-				<AboutSection>
-					<AboutCard>
-						<AboutText>
-							<StyledTitle>
-								About Us
-							</StyledTitle>
-							<p>
-								Lorem ipsum dolor sit amet,
-								consectetur adipiscing elit.
-								Aliquam ac pulvinar vitae
-								ipsum, lectus nisi.
-							</p>
-							<p>
-								Consectetur dui interdum
-								congue vitae ultrices.
-								Lobortis vel id facilisi
-								netus. Potenti habitasse id
-								tellus est , aenean. Laoreet
-								ac etiam pharetra faucibus
-								integer purus duis elit at.
-								Convallis semper quis
-								aliquam dis leo pellentesque
-								aliquet orci arcu. Maecenas
-								lobortis proin commodo quis
-								magna arcu senectus non
-								tincidunt. A nisl netus
-								pellentesque a consequat
-								lacus et.
-							</p>
-							<p>
-								Purus felis semper consequat
-								lectus orci, sed. Quis elit
-								ac sagittis ipsum purus
-								mauris duis tincidunt in. At
-								luctus volutpat nisl,
-								dignissim egestas.
-							</p>
-						</AboutText>
-						<ImageContainer>
-							<Wrapper>
-								<Image
-									src={RazPortrait}
-									alt="Owner Portrait"
-									layout="fill"
-									objectFit="scale-down"
-								/>
-							</Wrapper>
-						</ImageContainer>
-					</AboutCard>
-				</AboutSection>
-			</main>
+			<AboutSection>
+				<AboutCard>
+					<AboutText>
+						<StyledTitle>About Us</StyledTitle>
+						<p>
+							Lorem ipsum dolor sit amet,
+							consectetur adipiscing elit.
+							Aliquam ac pulvinar vitae ipsum,
+							lectus nisi.
+						</p>
+						<p>
+							Consectetur dui interdum congue
+							vitae ultrices. Lobortis vel id
+							facilisi netus. Potenti
+							habitasse id tellus est ,
+							aenean. Laoreet ac etiam
+							pharetra faucibus integer purus
+							duis elit at. Convallis semper
+							quis aliquam dis leo
+							pellentesque aliquet orci arcu.
+							Maecenas lobortis proin commodo
+							quis magna arcu senectus non
+							tincidunt. A nisl netus
+							pellentesque a consequat lacus
+							et.
+						</p>
+						<p>
+							Purus felis semper consequat
+							lectus orci, sed. Quis elit ac
+							sagittis ipsum purus mauris duis
+							tincidunt in. At luctus volutpat
+							nisl, dignissim egestas.
+						</p>
+					</AboutText>
+					<ImageContainer>
+						<Wrapper>
+							<Image
+								src={RazPortrait}
+								alt="Owner Portrait"
+								layout="fill"
+								objectFit="scale-down"
+							/>
+						</Wrapper>
+					</ImageContainer>
+				</AboutCard>
+			</AboutSection>
 		</>
 	);
 }
