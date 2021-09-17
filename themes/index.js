@@ -40,4 +40,8 @@ export const GlobalStyles = createGlobalStyle`
 	font-family: 'Hammersmith One', -apple-system, sans-serif;
     text-rendering: optimizeLegibility;
   }
+  
+  #__next {
+    flex: 1;
+  }
 `;

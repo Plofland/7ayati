@@ -151,6 +151,7 @@ const SocialContainerVert = styled.div`
 	position: absolute;
 	right: 2rem;
 	z-index: 99;
+	width: 2.5rem;
 
 	a {
 		color: ${colors.lightText};
@@ -162,8 +163,12 @@ const SocialContainerVert = styled.div`
 const SocialContainerHor = styled.div`
 	display: flex;
 	flex-direction: row;
-
+	justify-content: center;
+	width: 80%;
+	height: 3rem;
+	
 	a {
+		display: contents;
 		color: ${colors.darkText};
 	}
 `;

@@ -13,6 +13,8 @@
 - [x] (Phone size) add a small 7ayati logo in the upper right
 - [x] convert all img tags to nextJS Image components
 - [ ] blur placeholders for all nextJS Images
+- [ ] remove triangle
+- [ ] remove useless dependencies
 
 
 ### General Styling
