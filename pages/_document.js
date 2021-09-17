@@ -17,10 +17,10 @@ export default class MyDocument extends Document {
 			<Html lang="en">
 				<Head></Head>
 				<body>
-					<Main />
-					<NextScript />
 					{/* Empty script tag as chrome bug fix, see https://stackoverflow.com/a/42969608/943337 */}
                     <script> </script>
+					<Main />
+					<NextScript />
 				</body>
 			</Html>
 		);
