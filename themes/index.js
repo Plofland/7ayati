@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const breakpoints = {
 	mobile: '750px',
-	tablet: '1024px',
+	tablet: '1025px',
 	desktop: '1200px'
 };
 
