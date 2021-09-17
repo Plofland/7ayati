@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
 import hayatiLogo from '../public/images/FayatiLogoNoBG200pxWhiteText.png';
-import { colors } from '../themes';
+import { colors, mq } from '../themes';
 
 export default function Navbar() {
 	return (
@@ -42,6 +42,8 @@ export default function Navbar() {
 const StyledNav = styled.nav`
 	display: flex;
 	justify-content: space-evenly;
+	${mq({ marginTop: ['0', '1rem', '0'] })};
+
 `;
 
 const StyledLogo = styled.div`
