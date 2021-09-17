@@ -73,9 +73,9 @@ export default function About() {
 
 const AboutSection = styled.div`
 	${mq({
-		margin: ['10vh auto', '20vh auto', '20vh auto']
+		margin: ['10vh auto', '5vh auto', '20vh auto']
 	})};
-	${mq({ width: ['90%', '80%', '70%'] })};
+	${mq({ width: ['90%', '70%', '70%'] })};
 `;
 
 const AboutCard = styled.div`

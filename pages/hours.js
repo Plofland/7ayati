@@ -81,7 +81,7 @@ const HoursSection = styled.div`
 	justify-content: space-evenly;
 	${mq({ width: ['90%', '70%', '70%'] })};
 	${mq({
-		margin: ['10vh auto', '20vh auto', '10vh auto']
+		margin: ['10vh auto', '5vh auto', '10vh auto']
 	})};
 	background-color: ${colors.cyanBlue};
 `;
