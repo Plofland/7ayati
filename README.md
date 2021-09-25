@@ -10,7 +10,7 @@
 ### General Site
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
 - [ ] blur placeholders for all nextJS Images
-- [ ] leave instructions for adding items to the 'database'
+- [x] leave instructions for adding items to the 'database'
 - [ ] get it hosted as soon as we buy a domain
 
 
