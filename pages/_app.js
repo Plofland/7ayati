@@ -58,10 +58,10 @@ function App({ Component, pageProps }) {
 					<MobileLogo />
 				</div>
 			) : (
-				<>
+				<div>
 					<Navbar />
 					<Socialbar vertical={true} />
-				</>
+				</div>
 			)}
 			<Component {...pageProps} />
 			<Footer />

@@ -145,7 +145,7 @@ export default function Socialbar(props) {
 }
 
 const SocialContainerVert = styled.div`
-	display: flex;
+	${mq({ display: ['none', 'flex', 'flex'] })};
 	justify-content: center;
 	flex-direction: column;
 	position: absolute;
@@ -166,7 +166,7 @@ const SocialContainerHor = styled.div`
 	justify-content: center;
 	width: 80%;
 	height: 3rem;
-	
+
 	a {
 		display: contents;
 		color: ${colors.darkText};
