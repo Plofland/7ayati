@@ -19,7 +19,6 @@
 
 ### Landing Page
 ### Navbar
--   [ ] (mobile) add a simple animation when the nav links are clicked
 
 ### Socialbar
 
