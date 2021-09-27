@@ -11,7 +11,7 @@
 - [ ] Make sure to have a 'Coming Soon!' or 'Opening in 2022!' somewhere on the landing page
 - [ ] blur placeholders for all nextJS Images
 - [x] leave instructions for adding items to the 'database'
-- [ ] get it hosted as soon as we buy a domain
+- [ ] get it hosted as soon as we buy a domain next year
 
 
 ### General Styling
@@ -19,7 +19,6 @@
 
 ### Landing Page
 ### Navbar
--   [ ] (mobile) add a simple animation when the nav links are clicked
 
 ### Socialbar
 
@@ -39,3 +38,4 @@
 - [ ] give the call to action button a call to action color
 
 ### Footer
+ something
